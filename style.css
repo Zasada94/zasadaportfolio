@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap");
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "League Spartan", sans-serif;
 }
 
 .burger {
-	display: flex;
 	font-size: 40px;
 	transition: 0.3s linear;
-	background-color: red;
+	margin-right: 20px;
+	background-image: linear-gradient(to right, #013364, #d7f4ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .burger:hover {
@@ -17,17 +22,16 @@
 
 aside {
 	position: absolute;
-	top: 0;
+	top: 100px;
 	bottom: 0;
-	left: -300px;
-	width: 300px;
+	left: -100vw;
+	width: 100vw;
 	background-color: #000;
 	transition: 0.3s linear;
 }
 
 .fas {
 	display: none;
-	color: gray;
 }
 
 i.show {
@@ -38,9 +42,34 @@ aside.show {
 	left: 0;
 }
 
-.headerPrimary {
+.headerContainer {
 	display: flex;
-	justify-content: center;
-	background-color: yellow;
-	align-content: space-between;
+	justify-content: space-between;
+	align-items: center;
+	color: #013364;
+	margin-top: 10px;
+}
+
+.homeContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	padding-right: 10px;
+	color: #013364;
+}
+
+.logo {
+	font-size: 35px;
+	padding: 10px 5px 10px 15px;
+	background-image: linear-gradient(to right, #013364, #d7f4ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.homeContainer h1 {
+	font-size: 25px;
+}
+.homeContainer span {
+	font-size: 18px;
 }
