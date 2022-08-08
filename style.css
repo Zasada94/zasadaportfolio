@@ -7,6 +7,15 @@
 	font-family: "League Spartan", sans-serif;
 }
 
+.firstColor {
+	color: #013364;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+}
+
 body {
 	background-color: white;
 	height: 200vh;
@@ -53,7 +62,6 @@ aside {
 	align-items: center;
 	color: #013364;
 	margin-top: 10px;
-	position: fixed;
 	width: 100%;
 }
 
@@ -155,6 +163,26 @@ aside.show {
 		max-width: 800px;
 	}
 }
+.titleWrapper h2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.titleWrapper .animation {
+	background-image: linear-gradient(-225deg, #d7f4ff 0%, #013364 100%);
+	background-size: 300% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 8s linear infinite;
+	font-size: 35px;
+}
 
-.svgLogo svg {
+@keyframes textclip {
+	to {
+		background-position: 300% center;
+	}
 }
