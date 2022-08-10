@@ -80,6 +80,7 @@ aside {
 	cursor: pointer;
 	padding-right: 10px;
 	color: #013364;
+	text-decoration: none;
 }
 
 .logo {
@@ -175,7 +176,16 @@ aside.show {
 	}
 }
 
+/* Tytuł i main */
 .titleWrapper {
+	position: relative;
+	top: 140px;
+	color: #013364;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .titleWrapper h2 {
@@ -184,7 +194,7 @@ aside.show {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 35px;
+	font-size: 37px;
 }
 .titleWrapper .animation {
 	background-image: linear-gradient(-225deg, #d7f4ff 0%, #013364 100%);
@@ -194,7 +204,7 @@ aside.show {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: textclip 10s linear infinite;
-	font-size: 38px;
+	font-size: 40px;
 }
 
 @keyframes textclip {
@@ -203,7 +213,40 @@ aside.show {
 	}
 }
 
-.titleMain {
-	position: relative;
-	top: 200px;
+.titleWrapper h2 span {
+	animation: textclip2 10s linear infinite;
+	margin-bottom: 5px;
+}
+@keyframes textclip2 {
+	50% {
+		color: #013364;
+	}
+	75% {
+		color: #94b1c5;
+	}
+}
+
+.titleWrapper p {
+	display: inline-block;
+	text-align: center;
+	padding-top: 30px;
+}
+.landingIcons {
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+.landingIcons div {
+	flex-basis: 34%;
+}
+
+.landingIcons div p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
 }
