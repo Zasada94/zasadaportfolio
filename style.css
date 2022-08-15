@@ -9,6 +9,7 @@
 :root {
 	--first: #013364;
 	--second: #d7f4ff;
+	--about: #000080;
 }
 
 .firstColor {
@@ -181,9 +182,13 @@ aside.show {
 }
 
 /* Tytuł i main */
+main {
+	display: flex;
+	flex-direction: column;
+}
 .titleWrapper {
-	position: relative;
-	top: 140px;
+	display: block;
+	margin-top: 140px;
 	color: var(--first);
 	display: flex;
 	flex-direction: column;
@@ -327,4 +332,44 @@ aside.show {
 	.landingIcons div p {
 		font-size: 30px;
 	}
+}
+
+/* about me section styling */
+#aboutMe {
+	padding-top: 20px;
+	text-align: center;
+	color: var(--first);
+}
+.aboutMeWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px 0 10px;
+}
+.topicHeader h2 {
+	color: var(--about);
+}
+.topicHeader h3 {
+	font-weight: 500;
+}
+
+.topicHeader h3 span {
+	font-weight: 700;
+	color: var(--about);
+}
+
+.aboutMeWrapper p {
+	margin: 10px 0;
+}
+.aboutMeWrapper p span {
+	font-weight: 700;
+}
+
+.topicWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.topicIcon {
+	color: var(--about);
 }
