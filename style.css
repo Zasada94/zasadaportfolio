@@ -257,6 +257,20 @@ aside.show {
 	width: 50%;
 	overflow: hidden;
 }
+.landingIcons div:hover {
+	animation: upDown 2s linear infinite;
+}
+@keyframes upDown {
+	25% {
+		transform: translate(0, 8%);
+	}
+	75% {
+		transform: translate(0, -8%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
 
 .landingIcons div p {
 	font-size: 20px;
@@ -270,10 +284,10 @@ aside.show {
 	background-image: linear-gradient(to right, var(--second), white);
 	text-decoration: none;
 	margin-top: 30px;
-	padding: 20px 30px;
+	padding: 12px 35px;
 	border: 4px solid var(--first);
-	border-radius: 30px;
-	font-size: 30px;
+	border-radius: 23px;
+	font-size: 25px;
 	font-weight: 700;
 	color: var(--first);
 	transition: 0.5s;
@@ -294,7 +308,11 @@ aside.show {
 		font-size: 80px;
 	}
 	.titleWrapper div p {
-		font-size: 40px;
+		font-size: 35px;
+	}
+	.landingIcons {
+		max-width: 1300px;
+		padding-top: 40px;
 	}
 	.landingIcons div {
 		width: 23%;
@@ -303,5 +321,10 @@ aside.show {
 	}
 	.landingIcons div p {
 		font-size: 20px;
+	}
+}
+@media (min-width: 1080px) {
+	.landingIcons div p {
+		font-size: 30px;
 	}
 }
