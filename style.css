@@ -243,6 +243,7 @@ aside.show {
 
 /* main icons */
 .landingIcons {
+	width: 95%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -253,9 +254,12 @@ aside.show {
 }
 .landingIcons div {
 	flex-basis: 34%;
+	width: 50%;
+	overflow: hidden;
 }
 
 .landingIcons div p {
+	font-size: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-weight: 700;
@@ -265,7 +269,7 @@ aside.show {
 .contactButton {
 	background-image: linear-gradient(to right, var(--second), white);
 	text-decoration: none;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 20px 30px;
 	border: 4px solid var(--first);
 	border-radius: 30px;
@@ -280,4 +284,24 @@ aside.show {
 	color: var(--second);
 	background-image: linear-gradient(to right, var(--first), var(--second));
 	border-color: var(--second);
+}
+
+@media (min-width: 720px) {
+	.titleWrapper h2 {
+		font-size: 70px;
+	}
+	.titleWrapper .animation {
+		font-size: 80px;
+	}
+	.titleWrapper div p {
+		font-size: 40px;
+	}
+	.landingIcons div {
+		width: 23%;
+		flex-wrap: no-wrap;
+		flex-basis: 20%;
+	}
+	.landingIcons div p {
+		font-size: 20px;
+	}
 }
