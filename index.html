@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="headerContainer">
+    <header class="headerContainer" data-aos="fade-down" data-aos-duration="2000">
         <a class="homeContainer" href="#">
             <div class="logo">
                 <i class="fa-solid fa-igloo"></i>
@@ -33,15 +33,15 @@
     </header>
     <aside>
         <nav class="menu">
-            <a href="#home">Home</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#referencies">Referencies</a>
-            <a href="#contact">Contact</a>
+            <a class="menuItem" href="#home">Home</a>
+            <a class="menuItem" href="#aboutMe">About Me</a>
+            <a class="menuItem" href="#technologies">Technologies</a>
+            <a class="menuItem" href="#portfolio">Portfolio</a>
+            <a class="menuItem" href="#referencies">Referencies</a>
+            <a class="menuItem" href="#contact">Contact</a>
         </nav>
     </aside>
-    <main>
+    <main id="home">
         <section class="titleWrapper">
             <div>
                 <h2>
@@ -73,15 +73,14 @@
                     <img src="./images/svg/calendar-svgrepo-com.svg" alt="">
                     <p>ON TIME</p>
                 </div>
-
             </div>
-            <a href="#contact" class="contactButton" data-aos="flip-up" data-aos-duration="2000">
+            <a href="#contact" class="contactButton" >
             <span>Contact me</span>
         </a>
         </section>
         <section id="aboutMe">
             <div class="aboutMeWrapper">
-                <div class="topicHeader">
+                <div class="topicHeader" data-aos="fade-down" data-aos-duration="2000">
                     <div class="topicWrapper">
                         <h2>About me</h2>
                         <div class="topicIcon">
@@ -91,7 +90,7 @@
                     <h3>
                         I am a <span>Junior Front-end developer</span> currently serching for a job.
                     </h3>
-
+                    <div class="line"></div>
                 </div>
                 <div class="aboutMe">
 
@@ -100,23 +99,27 @@
                         studies in
                         Warsaw Politechnics</span> with a title of Master of Science as well as a <span>Computer Science Diploma in
                         Frontend Development</span> with React on Kozminsky University.</p>
-                    <p>
+
+                    <p data-aos="fade-left" data-aos-duration="2000">
                         <span>Projects I am coding </span> are high quality. I am focused on details, optimalisations
                         and good code
                         practices.
                     </p>
-                    <p>
+                    <p data-aos="fade-right" data-aos-duration="2000">
                         <span>Websites developed </span> by me are responsive and that is why they are being well
                         displayed on all
                         resolutions.
                     </p>
-                    <p>
+                    <p data-aos="fade-left" data-aos-duration="2000">
                         I am <span>friendly, comunicative and open-minded</span> person that gets along well with
                         people. I have
                         <span>experience in project management</span> and I am a huge fan of
                         <span>english language.</span>
                     </p>
                 </div>
+            </div>
+            <div class="profilePhoto" data-aos="fade-left" data-aos-duration="2000">
+                <img src="./images/profilePhoto.png" alt="">
             </div>
         </section>
     </main>
