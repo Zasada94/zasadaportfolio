@@ -4,12 +4,6 @@ const iconX = document.querySelector(".fa-solid.fa-xmark");
 const column = document.querySelector("aside");
 const menuItems = document.querySelectorAll(".menuItem");
 
-burger.addEventListener("click", function () {
-	iconBurger.classList.toggle("show");
-	iconX.classList.toggle("show");
-	column.classList.toggle("show");
-});
-
 const header = document.querySelector(".headerContainer");
 
 document.addEventListener("scroll", function () {
@@ -20,8 +14,13 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-function executeIfMinWidth720(e) {
-	if (window.matchMedia("(max-width: 720px)").matches) {
+function executeIfMaxWidth1080(e) {
+	if (window.matchMedia("(max-width: 1080px)").matches) {
+		burger.addEventListener("click", function () {
+			iconBurger.classList.toggle("show");
+			iconX.classList.toggle("show");
+			column.classList.toggle("show");
+		});
 		menuItems.forEach((item) => {
 			item.addEventListener("click", () => {
 				iconBurger.classList.toggle("show");
@@ -32,6 +31,5 @@ function executeIfMinWidth720(e) {
 	}
 }
 
-executeIfMinWidth720();
-
-window.addEventListener("resize", executeIfMinWidth720);
+executeIfMaxWidth1080();
+document.addEventListener("resize", executeIfMaxWidth1080);

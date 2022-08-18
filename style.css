@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap");
-
+html {
+	scroll-behavior: smooth;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -20,6 +22,7 @@
 	display: block;
 	flex-direction: row;
 	justify-content: center;
+	height: 500px;
 	max-width: 1400px;
 }
 
@@ -66,13 +69,14 @@ aside {
 /* header Logo */
 .headerContainer {
 	position: fixed;
+	top: 0;
+	height: 70px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	color: var(--first);
-	padding-top: 10px;
-	width: 100%;
-	z-index: 6;
+	width: 100vw;
+	z-index: 5;
 	background-color: white;
 }
 
@@ -109,7 +113,7 @@ aside {
 /* Navigation menu */
 aside.show {
 	left: 0;
-	z-index: 4;
+	z-index: 6;
 	background-color: white;
 }
 .menu {
@@ -120,7 +124,7 @@ aside.show {
 	text-align: center;
 	height: 80%;
 	padding-top: 30px;
-	z-index: 7;
+	z-index: 6;
 }
 
 .menu a {
@@ -188,9 +192,12 @@ aside.show {
 main {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .titleWrapper {
+	max-width: 1400px;
 	display: block;
+	width: 100%;
 	margin-top: 140px;
 	color: var(--first);
 	display: flex;
@@ -263,17 +270,24 @@ main {
 .landingIcons div {
 	flex-basis: 34%;
 	width: 50%;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+}
+.landingIcons div img {
+	width: 100px;
+	height: 100px;
 }
 .landingIcons div:hover {
 	animation: upDown 2s linear infinite;
 }
 @keyframes upDown {
 	25% {
-		transform: translate(0, 8%);
+		transform: translate(0, 5%);
 	}
 	75% {
-		transform: translate(0, -8%);
+		transform: translate(0, -5%);
 	}
 	100% {
 		transform: translate(0, 0);
@@ -285,6 +299,12 @@ main {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-weight: 700;
+}
+@media (min-width: 400px) {
+	.landingIcons div img {
+		width: 150px;
+		height: 150px;
+	}
 }
 
 /* contact button */
@@ -339,10 +359,12 @@ main {
 
 /* about me section styling */
 #aboutMe {
-	padding-top: 20px;
+	padding-top: 70px;
 	text-align: center;
 	display: flex;
 	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
 }
 .profilePhoto {
 	display: none;
@@ -390,24 +412,17 @@ div.line {
 	height: 1px;
 	width: 100%;
 	background-color: var(--about);
-	margin: 15px 0 0 0;
+	margin: 14px 0 0 0;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1080px) {
 	#aboutMe {
-		padding-top: 20px;
 		text-align: start;
 		justify-content: space-around;
 	}
 	.profilePhoto {
 		display: block;
-		margin: 30px;
-		width: 500px;
-	}
-	.profilePhoto img {
 		width: 250px;
-		max-width: 90%;
-		margin: 0 auto;
 	}
 	.topicWrapper {
 		display: flex;
@@ -423,6 +438,7 @@ div.line {
 	.aboutMeWrapper {
 		margin: 30px 20px 0 30px;
 		color: var(--first);
+		width: 60%;
 	}
 	.topicHeader h2 {
 		font-size: 35px;
@@ -433,4 +449,9 @@ div.line {
 	.aboutMeWrapper p {
 		font-size: 17px;
 	}
+}
+.profilePhoto img {
+	width: 200px;
+	max-width: 90%;
+	margin: 0 auto;
 }
