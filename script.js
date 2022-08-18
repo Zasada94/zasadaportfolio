@@ -20,10 +20,18 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-menuItems.forEach((item) => {
-	item.addEventListener("click", () => {
-		iconBurger.classList.toggle("show");
-		iconX.classList.toggle("show");
-		column.classList.toggle("show");
-	});
-});
+function executeIfMinWidth720(e) {
+	if (window.matchMedia("(max-width: 720px)").matches) {
+		menuItems.forEach((item) => {
+			item.addEventListener("click", () => {
+				iconBurger.classList.toggle("show");
+				iconX.classList.toggle("show");
+				column.classList.toggle("show");
+			});
+		});
+	}
+}
+
+executeIfMinWidth720();
+
+window.addEventListener("resize", executeIfMinWidth720);

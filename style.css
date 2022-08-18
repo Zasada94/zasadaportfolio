@@ -17,16 +17,15 @@
 }
 
 .main {
-	display: flex;
+	display: block;
 	flex-direction: row;
-	max-width: 1400px;
 	justify-content: center;
+	max-width: 1400px;
 }
 
 body {
 	background-color: white;
 	height: 200vh;
-	max-width: 1400px;
 	margin: 0 auto;
 }
 /* Header burger */
@@ -73,7 +72,7 @@ aside {
 	color: var(--first);
 	padding-top: 10px;
 	width: 100%;
-	z-index: 5;
+	z-index: 6;
 	background-color: white;
 }
 
@@ -121,6 +120,7 @@ aside.show {
 	text-align: center;
 	height: 80%;
 	padding-top: 30px;
+	z-index: 7;
 }
 
 .menu a {
