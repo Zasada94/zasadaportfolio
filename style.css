@@ -154,12 +154,6 @@ aside.show {
 		margin-top: 15px;
 	}
 }
-@media (min-width: 720px) and (orientation: landscape) {
-	.menu a {
-		width: 40%;
-		margin-top: 15px;
-	}
-}
 
 @media (min-width: 1080px) {
 	.burger {
@@ -300,12 +294,6 @@ main {
 	padding-bottom: 10px;
 	font-weight: 700;
 }
-@media (min-width: 400px) {
-	.landingIcons div img {
-		width: 150px;
-		height: 150px;
-	}
-}
 
 /* contact button */
 .contactButton {
@@ -327,7 +315,12 @@ main {
 	background-image: linear-gradient(to right, var(--first), var(--second));
 	border-color: var(--second);
 }
-
+@media (min-width: 400px) {
+	.landingIcons div img {
+		width: 150px;
+		height: 150px;
+	}
+}
 @media (min-width: 720px) {
 	.titleWrapper h2 {
 		font-size: 70px;
@@ -345,7 +338,7 @@ main {
 	.landingIcons div {
 		width: 23%;
 		flex-wrap: no-wrap;
-		flex-basis: 20%;
+		flex-basis: 25%;
 	}
 	.landingIcons div p {
 		font-size: 20px;
@@ -354,6 +347,10 @@ main {
 @media (min-width: 1080px) {
 	.landingIcons div p {
 		font-size: 30px;
+	}
+	.landingIcons div img {
+		width: 200px;
+		height: 200px;
 	}
 }
 
