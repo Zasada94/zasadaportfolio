@@ -12,6 +12,7 @@ html {
 	--first: #013364;
 	--second: #d7f4ff;
 	--about: #000080;
+	--contact: #fd7f20;
 }
 
 .firstColor {
@@ -28,8 +29,8 @@ html {
 
 body {
 	background-color: white;
-	height: 200vh;
 	margin: 0 auto;
+	height: 500vh;
 }
 /* Header burger */
 .burger {
@@ -419,7 +420,8 @@ div.line {
 @media (min-width: 1080px) {
 	#aboutMe {
 		text-align: start;
-		justify-content: space-around;
+		justify-content: space-between;
+		padding: 70px 100px 0 100px;
 	}
 	.profilePhoto {
 		display: block;
@@ -455,4 +457,89 @@ div.line {
 	width: 200px;
 	max-width: 90%;
 	margin: 0 auto;
+}
+
+/* contact section styling */
+#contact {
+	padding-top: 70px;
+	width: 100%;
+
+	text-align: center;
+	display: block;
+	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
+	flex-grow: 1;
+}
+
+.contactWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px 0 10px;
+	color: var(--first);
+}
+#contact .topicHeader h2 {
+	color: var(--contact);
+	font-size: 30px;
+}
+#contact .topicHeader h3 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#contact .topicHeader h3 span {
+	font-weight: 700;
+	color: var(--contact);
+}
+
+#contact .topicIcon {
+	color: var(--contact);
+	margin: 5px 5px;
+	font-size: 25px;
+}
+#contact div.line {
+	height: 1px;
+	width: 100%;
+	background-color: var(--contact);
+	margin: 14px 0 0 0;
+}
+
+.contactWrapper ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact ul li {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.contact ul li a {
+	color: var(--first);
+	text-decoration: none;
+	font-size: 15px;
+	transition: 0.2s;
+}
+.contact ul li a:hover {
+	color: var(--contact);
+}
+
+@media (min-width: 1080px) {
+	#contact {
+		padding: 70px 100px 0 100px;
+		text-align: start;
+		justify-content: space-around;
+	}
+	.contact ul {
+		align-items: flex-start;
+	}
+	.contactWrapper {
+		margin: 30px 20px 0 30px;
+		color: var(--first);
+		width: 60%;
+	}
+	.contact ul li a {
+		font-size: 17px;
+	}
 }
