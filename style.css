@@ -180,6 +180,10 @@ aside.show {
 		max-width: 800px;
 		z-index: 6;
 	}
+	aside.show {
+		right: 10px;
+		left: auto;
+	}
 }
 
 /* Tytuł i main */

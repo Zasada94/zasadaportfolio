@@ -14,8 +14,7 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-function executeIfMaxWidth1080() {
-	if (window.matchMedia("(max-width: 1080px)").matches) {
+
 		burger.addEventListener("click", () => {
 			iconBurger.classList.toggle("show");
 			iconX.classList.toggle("show");
@@ -28,8 +27,4 @@ function executeIfMaxWidth1080() {
 				column.classList.toggle("show");
 			});
 		});
-	}
-}
-executeIfMaxWidth1080();
-window.addEventListener("resize", executeIfMaxWidth1080);
-executeIfMaxWidth1080();
+
