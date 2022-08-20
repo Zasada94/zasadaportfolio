@@ -14,17 +14,15 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-
-		burger.addEventListener("click", () => {
-			iconBurger.classList.toggle("show");
-			iconX.classList.toggle("show");
-			column.classList.toggle("show");
-		});
-		menuItems.forEach((item) => {
-			item.addEventListener("click", () => {
-				iconBurger.classList.toggle("show");
-				iconX.classList.toggle("show");
-				column.classList.toggle("show");
-			});
-		});
-
+burger.addEventListener("click", () => {
+	iconBurger.classList.toggle("show");
+	iconX.classList.toggle("show");
+	column.classList.toggle("show");
+});
+menuItems.forEach((item) => {
+	item.addEventListener("click", () => {
+		iconBurger.classList.toggle("show");
+		iconX.classList.toggle("show");
+		column.classList.toggle("show");
+	});
+});
