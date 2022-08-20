@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap");
 html {
 	scroll-behavior: smooth;
+	background-color: white;
 }
 * {
 	box-sizing: border-box;
@@ -13,6 +14,7 @@ html {
 	--second: #d7f4ff;
 	--about: #000080;
 	--contact: #fd7f20;
+	--technologies: #005b96;
 }
 
 .firstColor {
@@ -20,11 +22,12 @@ html {
 }
 
 .main {
-	display: block;
+	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	height: 500px;
 	max-width: 1400px;
+	background-color: white;
 }
 
 body {
@@ -273,10 +276,19 @@ main {
 	flex-direction: column;
 	align-items: center;
 	margin: 10px 0;
+	animation: decay 2s ease-out;
 }
 .landingIcons div img {
 	width: 100px;
 	height: 100px;
+}
+@keyframes decay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .landingIcons div:hover {
 	animation: upDown 2s linear infinite;
@@ -367,6 +379,7 @@ main {
 	align-items: center;
 	max-width: 1400px;
 	overflow: hidden;
+	width: 90%;
 }
 .profilePhoto {
 	display: none;
@@ -374,7 +387,7 @@ main {
 .aboutMeWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 20px 0 10px;
+	margin: 10px 10px;
 	color: var(--first);
 }
 .topicHeader h2 {
@@ -421,7 +434,7 @@ div.line {
 	#aboutMe {
 		text-align: start;
 		justify-content: space-between;
-		padding: 70px 100px 0 100px;
+		padding: 70px 0 0 100px;
 	}
 	.profilePhoto {
 		display: block;
@@ -452,30 +465,119 @@ div.line {
 	.aboutMeWrapper p {
 		font-size: 17px;
 	}
+	.profilePhoto img {
+		width: 200px;
+		max-width: 90%;
+		margin: 0 auto;
+	}
 }
-.profilePhoto img {
-	width: 200px;
-	max-width: 90%;
-	margin: 0 auto;
+
+/* Technologies section styling */
+#technologies {
+	padding-top: 70px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
+	width: 90%;
+}
+.technologiesWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 10px;
+	color: var(--first);
+}
+#technologies .topicHeader h2 {
+	color: var(--technologies);
+	font-size: 30px;
+}
+#technologies .topicHeader h3 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#technologies .topicHeader h3 span {
+	font-weight: 700;
+	color: var(--technologies);
+}
+
+.technologiesWrapper p {
+	margin: 20px 0;
+	font-size: 15px;
+}
+.technologiesWrapper p span {
+	font-weight: 700;
+}
+
+#technologies .topicWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#technologies .topicIcon {
+	color: var(--technologies);
+	margin: 5px 5px;
+	font-size: 25px;
+}
+#technologies div.line {
+	height: 1px;
+	width: 100%;
+	background-color: var(--about);
+	margin: 14px 0 0 0;
+}
+
+@media (min-width: 1080px) {
+	#technologies {
+		text-align: start;
+		justify-content: space-between;
+		padding: 70px 100px 0 100px;
+	}
+	#technologies .topicWrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+	#technologies .topicWrapper,
+	#technologies .topicIcon {
+		order: -1;
+	}
+	.technologiesWrapper {
+		margin: 30px 20px 0 30px;
+		color: var(--first);
+		width: 60%;
+	}
+	#technologies .topicHeader h2 {
+		font-size: 35px;
+	}
+	#technologies .topicHeader h3 {
+		font-size: 22px;
+	}
+	#technologies .technologiesWrapper p {
+		font-size: 17px;
+	}
 }
 
 /* contact section styling */
 #contact {
 	padding-top: 70px;
 	width: 100%;
-
 	text-align: center;
 	display: block;
 	align-items: center;
 	max-width: 1400px;
 	overflow: hidden;
 	flex-grow: 1;
+	width: 90%;
 }
 
 .contactWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 20px 0 10px;
+	margin: 10px 10px;
 	color: var(--first);
 }
 #contact .topicHeader h2 {
