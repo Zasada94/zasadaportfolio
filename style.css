@@ -14,7 +14,7 @@ html {
 	--second: #d7f4ff;
 	--about: #000080;
 	--contact: #fd7f20;
-	--technologies: #005b96;
+	--technologies: #00585a;
 }
 
 .firstColor {
@@ -434,7 +434,7 @@ div.line {
 	#aboutMe {
 		text-align: start;
 		justify-content: space-between;
-		padding: 70px 0 0 100px;
+		padding: 70px 100px 0 100px;
 	}
 	.profilePhoto {
 		display: block;
@@ -524,7 +524,7 @@ div.line {
 #technologies div.line {
 	height: 1px;
 	width: 100%;
-	background-color: var(--about);
+	background-color: var(--technologies);
 	margin: 14px 0 0 0;
 }
 
@@ -546,9 +546,9 @@ div.line {
 		order: -1;
 	}
 	.technologiesWrapper {
-		margin: 30px 20px 0 30px;
+		margin: 30px 20px 0 20px;
 		color: var(--first);
-		width: 60%;
+		width: 100%;
 	}
 	#technologies .topicHeader h2 {
 		font-size: 35px;
@@ -564,9 +564,9 @@ div.line {
 /* contact section styling */
 #contact {
 	padding-top: 70px;
-	width: 100%;
+	width: 90%;
 	text-align: center;
-	display: block;
+	display: flex;
 	align-items: center;
 	max-width: 1400px;
 	overflow: hidden;
@@ -637,9 +637,9 @@ div.line {
 		align-items: flex-start;
 	}
 	.contactWrapper {
-		margin: 30px 20px 0 30px;
+		margin: 30px 20px 0 20px;
 		color: var(--first);
-		width: 60%;
+		width: 100%;
 	}
 	.contact ul li a {
 		font-size: 17px;
