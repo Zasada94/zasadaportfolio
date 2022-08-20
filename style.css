@@ -420,7 +420,7 @@ main {
 }
 .topicIcon {
 	color: var(--about);
-	margin: 5px 5px;
+	margin: 10px 10px;
 	font-size: 25px;
 }
 div.line {
@@ -477,6 +477,7 @@ div.line {
 	padding-top: 70px;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	max-width: 1400px;
 	overflow: hidden;
@@ -510,7 +511,7 @@ div.line {
 }
 #technologies .topicIcon {
 	color: var(--technologies);
-	margin: 5px 5px;
+	margin: 10px 10px;
 	font-size: 25px;
 }
 #technologies div.line {
@@ -526,6 +527,7 @@ div.line {
 }
 .technologies {
 	width: 100%;
+	margin: 20px 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -606,7 +608,7 @@ div.line {
 
 #contact .topicIcon {
 	color: var(--contact);
-	margin: 5px 5px;
+	margin: 10px 10px;
 	font-size: 25px;
 }
 #contact div.line {
