@@ -607,8 +607,8 @@ div.line {
 	margin: 14px 0 10px 0;
 }
 .portfolio img {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: auto;
 	margin: 15px 15px;
 }
 .portfolio {
@@ -617,11 +617,12 @@ div.line {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	flex-shrink: shrink;
 }
 @media (min-width: 720px) {
 	.portfolio img {
-		width: 150px;
-		height: 150px;
+		width: 300px;
+		height: auto;
 		margin: 20px 20px;
 	}
 }
@@ -652,8 +653,8 @@ div.line {
 		font-size: 35px;
 	}
 	.portfolio img {
-		width: 200px;
-		height: 200px;
+		width: 400px;
+		height: auto;
 		margin: 25px 25px;
 	}
 }
