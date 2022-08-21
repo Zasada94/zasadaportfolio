@@ -13,8 +13,9 @@ html {
 	--first: #013364;
 	--second: #d7f4ff;
 	--about: #000080;
-	--contact: #fd7f20;
+	--contact: #f25a25;
 	--technologies: #00585a;
+	--portfolio: #74121d;
 }
 
 .firstColor {
@@ -552,6 +553,105 @@ div.line {
 		font-size: 35px;
 	}
 	.technologies img {
+		width: 200px;
+		height: 200px;
+		margin: 25px 25px;
+	}
+}
+/* portfolio section styling */
+#portfolio {
+	padding-top: 70px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
+	width: 90%;
+}
+.portfolioWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 10px;
+	color: var(--first);
+}
+#portfolio .topicHeader h2 {
+	color: var(--portfolio);
+	font-size: 30px;
+}
+#portfolio .topicHeader h3 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#portfolio .topicHeader h3 span {
+	font-weight: 700;
+	color: var(--portfolio);
+}
+
+#portfolio .topicWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#portfolio .topicIcon {
+	color: var(--portfolio);
+	margin: 10px 10px;
+	font-size: 25px;
+}
+#portfolio div.line {
+	height: 1px;
+	width: 100%;
+	background-color: var(--portfolio);
+	margin: 14px 0 10px 0;
+}
+.portfolio img {
+	width: 100px;
+	height: 100px;
+	margin: 15px 15px;
+}
+.portfolio {
+	width: 100%;
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+@media (min-width: 720px) {
+	.portfolio img {
+		width: 150px;
+		height: 150px;
+		margin: 20px 20px;
+	}
+}
+
+@media (min-width: 1080px) {
+	#portfolio {
+		text-align: start;
+		justify-content: space-between;
+		padding: 70px 100px 0 100px;
+	}
+	#portfolio .topicWrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+	#portfolio .topicWrapper,
+	#portfolio .topicIcon {
+		order: -1;
+	}
+	.portfolioWrapper {
+		margin: 30px 20px 0 20px;
+		color: var(--first);
+		width: 100%;
+	}
+	#portfolio .topicHeader h2 {
+		font-size: 35px;
+	}
+	.portfolio img {
 		width: 200px;
 		height: 200px;
 		margin: 25px 25px;
