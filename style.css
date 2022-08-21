@@ -290,20 +290,6 @@ main {
 		opacity: 1;
 	}
 }
-.landingIcons div:hover {
-	animation: upDown 2s linear infinite;
-}
-@keyframes upDown {
-	25% {
-		transform: translate(0, 5%);
-	}
-	75% {
-		transform: translate(0, -5%);
-	}
-	100% {
-		transform: translate(0, 0);
-	}
-}
 
 .landingIcons div p {
 	font-size: 20px;
