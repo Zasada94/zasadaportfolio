@@ -15,14 +15,16 @@ document.addEventListener("scroll", function () {
 });
 
 burger.addEventListener("click", () => {
-	iconBurger.classList.toggle("show");
-	iconX.classList.toggle("show");
-	column.classList.toggle("show");
-});
-menuItems.forEach((item) => {
-	item.addEventListener("click", () => {
 		iconBurger.classList.toggle("show");
 		iconX.classList.toggle("show");
 		column.classList.toggle("show");
+});
+menuItems.forEach((item) => {
+	item.addEventListener("click", () => {
+		if (screen.width < 1080) {
+			iconBurger.classList.toggle("show");
+			iconX.classList.toggle("show");
+			column.classList.toggle("show");
+		}
 	});
 });

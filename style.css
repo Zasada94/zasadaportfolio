@@ -609,7 +609,6 @@ div.line {
 .portfolio img {
 	width: 100%;
 	height: auto;
-	margin: 15px 15px;
 }
 .portfolio {
 	width: 100%;
@@ -619,12 +618,20 @@ div.line {
 	justify-content: space-around;
 	flex-shrink: shrink;
 }
-@media (min-width: 720px) {
-	.portfolio img {
-		width: 300px;
-		height: auto;
-		margin: 20px 20px;
-	}
+.portfolio .projectWrapper {
+	width: 100%;
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio .projectLinks {
+	width: 100%;
+	border: 2px solid red;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 @media (min-width: 1080px) {
@@ -647,15 +654,12 @@ div.line {
 	.portfolioWrapper {
 		margin: 30px 20px 0 20px;
 		color: var(--first);
-		width: 100%;
 	}
 	#portfolio .topicHeader h2 {
 		font-size: 35px;
 	}
-	.portfolio img {
-		width: 400px;
-		height: auto;
-		margin: 25px 25px;
+	.portfolio .projectWrapper {
+		width: 49%;
 	}
 }
 
