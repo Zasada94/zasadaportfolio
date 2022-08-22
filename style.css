@@ -619,26 +619,67 @@ div.line {
 	flex-shrink: shrink;
 }
 .portfolio .projectWrapper {
+	color: #eeeeee;
 	width: 100%;
-	border: 2px solid red;
+	background-image: url(./images/projects/projectBackground.jpg);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 3% 2%;
+	border: 2px solid var(--first);
+	border-radius: 30px;
+	-webkit-box-shadow: 5px 5px 10px 1px var(--first);
+	-moz-box-shadow: 5px 5px 10px 1px var(--first);
+	box-shadow: 5px 5px 10px 1px var(--first);
 }
 .portfolio .projectLinks {
 	width: 100%;
-	border: 2px solid red;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+.portfolio .projectLinks a {
+	background-image: linear-gradient(to right, var(--second), white);
+	text-decoration: none;
+	margin: 15px 0;
+	padding: 12px 35px;
+	border: 2px solid var(--first);
+	border-radius: 23px;
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--first);
+	transition: 0.5s;
+	-webkit-box-shadow: 2px 2px 5px 1px var(--second);
+	-moz-box-shadow: 2px 2px 5px 1px var(--second);
+	box-shadow: 2px 2px 5px 1px var(--second);
+}
+
+.portfolio .projectLinks a:hover {
+	cursor: pointer;
+	color: var(--second);
+	background-image: linear-gradient(to right, var(--first), var(--second));
+	border-color: var(--second);
+	-webkit-box-shadow: inset 2px 2px 5px 1px var(--first);
+	-moz-box-shadow: inset 2px 2px 5px 1px var(--first);
+	box-shadow: inset 2px 2px 5px 1px var(--first);
+}
+
+.projectWrapper .projectTitle {
+	font-size: 25px;
+	font-weight: 700;
+	margin: 15px 0 10px 0;
+}
+@media (min-width: 720px) {
+	#portfolio {
+		padding: 70px 60px 0 60px;
+	}
 }
 
 @media (min-width: 1080px) {
 	#portfolio {
 		text-align: start;
 		justify-content: space-between;
-		padding: 70px 100px 0 100px;
 	}
 	#portfolio .topicWrapper {
 		display: flex;
@@ -659,7 +700,7 @@ div.line {
 		font-size: 35px;
 	}
 	.portfolio .projectWrapper {
-		width: 49%;
+		width: 45%;
 	}
 }
 
