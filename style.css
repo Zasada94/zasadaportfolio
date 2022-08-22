@@ -198,7 +198,7 @@ main {
 	align-items: center;
 }
 .titleWrapper {
-	max-width: 1400px;
+	max-width: 1200px;
 	display: block;
 	width: 100%;
 	margin-top: 140px;
@@ -321,8 +321,8 @@ main {
 }
 @media (min-width: 400px) {
 	.landingIcons div img {
-		width: 150px;
-		height: 150px;
+		width: 125px;
+		height: 125px;
 	}
 }
 @media (min-width: 720px) {
@@ -353,8 +353,8 @@ main {
 		font-size: 30px;
 	}
 	.landingIcons div img {
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 	}
 }
 
@@ -508,9 +508,9 @@ div.line {
 	margin: 14px 0 10px 0;
 }
 .technologies img {
-	width: 100px;
-	height: 100px;
-	margin: 15px 15px;
+	width: 75px;
+	height: 75px;
+	margin: 30px;
 }
 .technologies {
 	width: 100%;
@@ -521,9 +521,9 @@ div.line {
 }
 @media (min-width: 720px) {
 	.technologies img {
-		width: 150px;
-		height: 150px;
-		margin: 20px 20px;
+		width: 90px;
+		height: 90px;
+		margin: 45px;
 	}
 }
 
@@ -553,9 +553,9 @@ div.line {
 		font-size: 35px;
 	}
 	.technologies img {
-		width: 200px;
-		height: 200px;
-		margin: 25px 25px;
+		width: 115px;
+		height: 115px;
+		margin: 50px;
 	}
 }
 /* portfolio section styling */
