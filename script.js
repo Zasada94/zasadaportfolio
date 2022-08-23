@@ -15,9 +15,9 @@ document.addEventListener("scroll", function () {
 });
 
 burger.addEventListener("click", () => {
-		iconBurger.classList.toggle("show");
-		iconX.classList.toggle("show");
-		column.classList.toggle("show");
+	iconBurger.classList.toggle("show");
+	iconX.classList.toggle("show");
+	column.classList.toggle("show");
 });
 menuItems.forEach((item) => {
 	item.addEventListener("click", () => {
@@ -27,4 +27,15 @@ menuItems.forEach((item) => {
 			column.classList.toggle("show");
 		}
 	});
+});
+const swiper = new Swiper(".swiper", {
+	// Optional parameters
+	direction: "horizontal",
+	loop: true,
+
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
 });

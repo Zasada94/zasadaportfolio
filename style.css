@@ -16,6 +16,7 @@ html {
 	--contact: #f25a25;
 	--technologies: #00585a;
 	--portfolio: #74121d;
+	--referencies: #dab600;
 }
 
 .firstColor {
@@ -685,7 +686,7 @@ div.line {
 }
 
 .portfolio .imageHover {
-	width: 20%;
+	width: 22%;
 	height: 99%;
 	background-color: #1c3953;
 	position: absolute;
@@ -694,6 +695,7 @@ div.line {
 	transition: 0.5s;
 	font-size: 20px;
 	text-align: start;
+	border-radius: 5px;
 }
 .portfolio .imageHover p {
 	height: 20px;
@@ -706,10 +708,15 @@ div.line {
 	left: 80%;
 	opacity: 75%;
 }
+@media (min-width: 480px) {
+	#portfolio {
+		padding: 70px 40px 0 40px;
+	}
+}
 
 @media (min-width: 720px) {
 	#portfolio {
-		padding: 70px 60px 0 60px;
+		padding: 70px 80px 0 80px;
 	}
 }
 
@@ -738,6 +745,96 @@ div.line {
 	}
 	.portfolio .projectWrapper {
 		width: 45%;
+	}
+}
+/* referencies section */
+#referencies {
+	padding-top: 70px;
+	width: 90%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
+
+	width: 90%;
+}
+
+.referenciesWrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 10px;
+	color: var(--first);
+	flex-grow: 1;
+}
+#referencies .topicHeader h2 {
+	color: var(--referencies);
+	font-size: 30px;
+}
+#referencies .topicHeader h3 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#referencies .topicHeader h3 span {
+	font-weight: 700;
+	color: var(--referencies);
+}
+
+#referencies .topicIcon {
+	color: var(--referencies);
+	margin: 10px 10px;
+	font-size: 25px;
+}
+#referencies div.line {
+	height: 1px;
+	width: 100%;
+	background-color: var(--referencies);
+	margin: 14px 0 0 0;
+}
+
+.referencies {
+	width: 100%;
+}
+.swiper {
+	width: 90vw;
+	height: auto;
+	max-width: 1000px;
+}
+.swiper-wrapper {
+	width: 100%;
+	height: auto;
+}
+.swiper-wrapper img {
+	width: 100%;
+	padding: 50px 25px 0 0;
+}
+
+@media (min-width: 480px) {
+	.swiper-wrapper img {
+		padding: 50px 50px 20px 20px;
+	}
+}
+
+@media (min-width: 720px) {
+	.swiper {
+		width: 80vw;
+	}
+	.swiper-wrapper img {
+		padding: 50px 100px 30px 70px;
+	}
+}
+@media (min-width: 1080px) {
+	#referencies {
+		padding: 70px 100px 40px 100px;
+		text-align: start;
+		justify-content: space-around;
+	}
+	.swiper {
+		width: 70vw;
+	}
+	.swiper-wrapper img {
+		padding: 50px 130px 60px 100px;
 	}
 }
 
