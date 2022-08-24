@@ -5,6 +5,7 @@ const column = document.querySelector("aside");
 const menuItems = document.querySelectorAll(".menuItem");
 
 const header = document.querySelector(".headerContainer");
+const footer = document.querySelector(".footerWrapper");
 
 document.addEventListener("scroll", function () {
 	if (window.pageYOffset == 0) {
@@ -39,3 +40,11 @@ const swiper = new Swiper(".swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
+window.onscroll = function (ev) {
+	if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+		footer.classList.add("down");
+	} else {
+		footer.classList.remove("down");
+	}
+};
