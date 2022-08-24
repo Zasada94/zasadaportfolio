@@ -923,7 +923,7 @@ div.line {
 		width: 100%;
 	}
 	.contact ul li a {
-		font-size: 17px;
+		font-size: 20px;
 	}
 }
 
@@ -937,11 +937,11 @@ div.line {
 	line-height: 40px;
 	width: 100vw;
 	color: var(--first);
-	background-color: var(--second);
+	background-color: #eeeeee;
 	transition: 3s;
-	-webkit-box-shadow: 0 -1px 5px var(--second);
-	-moz-box-shadow: 0 -1px 5px var(--second);
-	box-shadow: 0 -1px 5px var(--second);
+	-webkit-box-shadow: 0 -1px 5px #eeeeee;
+	-moz-box-shadow: 0 -1px 5px #eeeeee;
+	box-shadow: 0 -1px 5px #eeeeee;
 }
 .footerWrapper i {
 	margin: 0 5px 1px 5px;
