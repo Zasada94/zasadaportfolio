@@ -440,7 +440,6 @@ div.line {
 		order: -1;
 	}
 	.aboutMeWrapper {
-		margin: 30px 20px 0 30px;
 		color: var(--first);
 		width: 60%;
 	}
@@ -547,6 +546,7 @@ div.line {
 	}
 	.technologiesWrapper {
 		margin: 30px 20px 0 20px;
+
 		color: var(--first);
 		width: 100%;
 	}
@@ -716,7 +716,7 @@ div.line {
 
 @media (min-width: 720px) {
 	#portfolio {
-		padding: 70px 80px 0 80px;
+		padding: 70px 100px 0 100px;
 	}
 }
 
@@ -928,6 +928,10 @@ div.line {
 }
 
 /* footer styling */
+#footer {
+	overflow: hidden;
+	width: 100vw;
+}
 .footerWrapper {
 	display: flex;
 	align-items: center;
@@ -935,10 +939,9 @@ div.line {
 	margin: 10px 0 0 0;
 	font-size: 15px;
 	line-height: 40px;
-	width: 100vw;
+	transition: 1s;
 	color: var(--first);
 	background-color: #eeeeee;
-	transition: 3s;
 	-webkit-box-shadow: 0 -1px 5px #eeeeee;
 	-moz-box-shadow: 0 -1px 5px #eeeeee;
 	box-shadow: 0 -1px 5px #eeeeee;
