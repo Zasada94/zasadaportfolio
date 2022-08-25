@@ -364,13 +364,15 @@ main {
 	padding-top: 70px;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	max-width: 1400px;
 	overflow: hidden;
 	width: 90%;
 }
-.profilePhoto {
-	display: none;
+.profilePhoto img {
+	width: 60%;
+	margin: 20px 0;
 }
 .aboutMeWrapper {
 	display: flex;
@@ -411,21 +413,32 @@ main {
 	font-size: 25px;
 }
 div.line {
-	height: 1px;
+	height: 100%;
 	width: 100%;
 	background-color: var(--about);
 	margin: 14px 0 0 0;
 }
+@media (min-width: 720px) {
+	.profilePhoto img {
+		width: 40%;
+	}
+}
 
 @media (min-width: 1080px) {
 	#aboutMe {
+		flex-direction: row;
 		text-align: start;
 		justify-content: space-between;
+		align-items: center;
 		padding: 70px 100px 0 100px;
 	}
 	.profilePhoto {
-		display: block;
-		width: 250px;
+		display: flex;
+		width: 30%;
+	}
+	.profilePhoto img {
+		width: 80%;
+		margin: 0 auto;
 	}
 	.topicWrapper {
 		display: flex;
@@ -450,11 +463,6 @@ div.line {
 	}
 	.aboutMeWrapper p {
 		font-size: 17px;
-	}
-	.profilePhoto img {
-		width: 200px;
-		max-width: 90%;
-		margin: 0 auto;
 	}
 }
 
