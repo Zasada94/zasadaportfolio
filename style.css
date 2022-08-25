@@ -375,7 +375,6 @@ main {
 .aboutMeWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 10px;
 	color: var(--first);
 }
 .topicHeader h2 {
@@ -473,7 +472,6 @@ div.line {
 .technologiesWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 10px;
 	color: var(--first);
 }
 #technologies .topicHeader h2 {
@@ -545,8 +543,6 @@ div.line {
 		order: -1;
 	}
 	.technologiesWrapper {
-		margin: 30px 20px 0 20px;
-
 		color: var(--first);
 		width: 100%;
 	}
@@ -573,7 +569,6 @@ div.line {
 .portfolioWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 10px;
 	color: var(--first);
 }
 #portfolio .topicHeader h2 {
@@ -737,7 +732,6 @@ div.line {
 		order: -1;
 	}
 	.portfolioWrapper {
-		margin: 30px 20px 0 20px;
 		color: var(--first);
 	}
 	#portfolio .topicHeader h2 {
@@ -763,7 +757,6 @@ div.line {
 .referenciesWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 10px;
 	color: var(--first);
 	flex-grow: 1;
 }
@@ -830,9 +823,6 @@ div.line {
 		text-align: start;
 		justify-content: space-around;
 	}
-	.referenciesWrapper {
-		margin: 30px 20px 0 20px;
-	}
 	.swiper {
 		width: 70vw;
 	}
@@ -857,7 +847,6 @@ div.line {
 .contactWrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 10px;
 	color: var(--first);
 	flex-grow: 1;
 }
@@ -918,7 +907,6 @@ div.line {
 		align-items: flex-start;
 	}
 	.contactWrapper {
-		margin: 30px 20px 0 20px;
 		color: var(--first);
 		width: 100%;
 	}
