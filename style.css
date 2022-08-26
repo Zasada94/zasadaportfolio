@@ -36,7 +36,9 @@ body {
 	background-color: white;
 	margin: 0 auto;
 	height: auto;
+	overflow-x: hidden;
 }
+
 /* Header burger */
 .burger {
 	display: flex;
@@ -55,7 +57,7 @@ body {
 
 aside {
 	position: fixed;
-	top: 65px;
+	top: 60px;
 	bottom: 0;
 	left: -100vw;
 	width: 100vw;
