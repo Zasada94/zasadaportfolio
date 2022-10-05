@@ -22,7 +22,7 @@ burger.addEventListener("click", () => {
 });
 menuItems.forEach((item) => {
 	item.addEventListener("click", () => {
-		if (screen.width < 1080) {
+		if (window.innerWidth < 1080) {
 			iconBurger.classList.toggle("show");
 			iconX.classList.toggle("show");
 			column.classList.toggle("show");
