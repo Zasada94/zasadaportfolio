@@ -880,7 +880,7 @@ div.line {
 .portfolio .projectWrapper {
   color: #eeeeee;
   width: 100%;
-  background-image: url(./images/projects/projectBackground.jpg);
+  background-image: url(../../images/projects/projectBackground.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
