@@ -828,6 +828,7 @@ div.line {
 }
 
 .referenciesWrapper {
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -870,13 +871,12 @@ div.line {
 }
 
 .referencies {
-	width: 90%;
+	width: 100%;
 }
 
 .swiper {
-	width: 85vw;
+	width: 100%;
 	height: auto;
-	max-width: 1000px;
 }
 
 .swiper-wrapper {
@@ -886,7 +886,7 @@ div.line {
 
 .swiper-wrapper img {
 	width: 100%;
-	padding: 50px 25px 0 0;
+	padding: 50px 0 0 0;
 }
 
 @media (min-width: 480px) {
