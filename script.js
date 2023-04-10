@@ -48,3 +48,8 @@ window.onscroll = function (ev) {
 		footer.classList.remove("down");
 	}
 };
+
+const footerDate = document.getElementById("footerDate");
+let objectDate = new Date();
+console.log(objectDate.getFullYear());
+footerDate.innerHTML = objectDate.getFullYear();
