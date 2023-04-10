@@ -99,6 +99,10 @@
   overflow: hidden;
 }
 
+.portfolio .projectVideo {
+  padding-bottom: 20px;
+}
+
 .portfolio .projectWrapper {
   color: #eeeeee;
   width: 100%;
@@ -189,6 +193,21 @@
   border-radius: 5px;
 }
 
+.portfolio .videoHover {
+  width: 22%;
+  height: 100%;
+  background-color: #1c3953;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
+  text-align: start;
+  border-radius: 5px;
+  padding-top: 70px;
+}
+
 .portfolio .imageHover p {
   height: 20px;
   padding: 20px 20px;
@@ -196,8 +215,15 @@
   color: #eeeeee;
 }
 
+.portfolio .videoHover p {
+  height: 20px;
+  padding: 20px 20px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
 .portfolio .projectImage:hover .imageHover,
-.portfolio .projectVideo:hover .imageHover {
+.portfolio .projectVideo:hover .videoHover {
   top: 0;
   left: 80%;
   opacity: 75%;
