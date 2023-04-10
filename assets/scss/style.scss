@@ -1017,7 +1017,8 @@ div.line {
 	color: #eeeeee;
 }
 
-.portfolio .projectImage:hover .imageHover {
+.portfolio .projectImage:hover .imageHover,
+.portfolio .projectVideo:hover .imageHover {
 	top: 0;
 	left: 80%;
 	opacity: 75%;
