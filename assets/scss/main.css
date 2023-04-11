@@ -45,6 +45,25 @@
   color: var(--portfolio);
 }
 
+#portfolio .topicHeader h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: var(--portfolio);
+}
+
+#portfolio .topicHeader ul {
+  max-width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  overflow: visible;
+}
+
+#portfolio .topicHeader ul li {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
 #portfolio .topicWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
