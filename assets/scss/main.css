@@ -278,56 +278,6 @@
     width: 45%;
   }
 }
-html {
-  scroll-behavior: smooth;
-  background-color: white;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "League Spartan", sans-serif;
-}
-
-:root {
-  --first: #013364;
-  --second: #d7f4ff;
-  --about: #000080;
-  --contact: #f25a25;
-  --technologies: #00585a;
-  --portfolio: #74121d;
-  --referencies: #dab600;
-}
-
-.firstColor {
-  color: var(--first);
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 500px;
-  max-width: 1400px;
-  background-color: white;
-}
-
-body {
-  background-color: white;
-  margin: 0 auto;
-  height: auto;
-  overflow-x: hidden;
-}
-
 /* Header burger */
 .burger {
   display: -webkit-box;
@@ -1316,4 +1266,53 @@ div.line {
   color: var(--second);
   -webkit-box-shadow: 0 -1px 5px var(--first);
   box-shadow: 0 -1px 5px var(--first);
-} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=style.css.map */
+html {
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --first: #013364;
+  --second: #d7f4ff;
+  --about: #000080;
+  --contact: #f25a25;
+  --technologies: #00585a;
+  --portfolio: #74121d;
+  --referencies: #dab600;
+}
+
+.firstColor {
+  color: var(--first);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 500px;
+  max-width: 1400px;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+  height: auto;
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */

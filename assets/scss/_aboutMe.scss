@@ -1,0 +1,154 @@
+/* about me section styling */
+#aboutMe {
+	padding-top: 70px;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 1400px;
+	overflow: hidden;
+	width: 90%;
+}
+
+.profilePhoto img {
+	width: 60%;
+	margin: 20px 0;
+}
+
+.aboutMeWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: var(--first);
+}
+
+.topicHeader h2 {
+	color: var(--about);
+	font-size: 30px;
+}
+
+.topicHeader h3 {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.topicHeader h3 span {
+	font-weight: 700;
+	color: var(--about);
+}
+
+.aboutMeWrapper p {
+	margin: 20px 0;
+	font-size: 15px;
+}
+
+.aboutMeWrapper p span {
+	font-weight: 700;
+}
+
+.topicWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.topicIcon {
+	color: var(--about);
+	margin: 10px 10px;
+	font-size: 25px;
+}
+
+div.line {
+	height: 1px;
+	width: 100%;
+	background-color: var(--about);
+	margin: 14px 0 0 0;
+}
+
+@media (min-width: 720px) {
+	.profilePhoto img {
+		width: 40%;
+	}
+}
+@media (min-width: 1080px) {
+	#aboutMe {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		text-align: start;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 70px 100px 0 100px;
+	}
+	.profilePhoto {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 30%;
+	}
+	.profilePhoto img {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.topicWrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+	.topicWrapper,
+	.topicIcon {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+	.aboutMeWrapper {
+		color: var(--first);
+		width: 60%;
+	}
+	.topicHeader h2 {
+		font-size: 35px;
+	}
+	.topicHeader h3 {
+		font-size: 22px;
+	}
+	.aboutMeWrapper p {
+		font-size: 17px;
+	}
+}
