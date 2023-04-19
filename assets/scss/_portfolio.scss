@@ -148,10 +148,10 @@
 	padding: 20px 0;
 }
 
-.portfolio .projectContainer:nth-child(3n){
+.portfolio .projectContainer:nth-child(3n) {
 	background-color: rgb(21, 67, 121);
 }
-.portfolio .projectContainer:nth-child(3n-1){
+.portfolio .projectContainer:nth-child(3n-1) {
 	background-color: rgb(34, 34, 34);
 }
 
@@ -178,6 +178,7 @@
 	justify-content: flex-start;
 	width: 30%;
 	color: #eeeeee;
+	text-align: center;
 }
 
 .portfolio .projectTitleWrapper .projectInfo {
@@ -311,22 +312,13 @@
 	opacity: 75%;
 }
 
-@media (min-width: 480px) {
-	#portfolio {
-		padding: 70px 40px 0 40px;
-	}
-}
-@media (min-width: 720px) {
-	#portfolio {
-		padding: 70px 100px 0 100px;
-	}
-}
 @media (min-width: 1080px) {
 	#portfolio {
 		text-align: start;
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
+		padding: 70px 100px 0 100px;
 	}
 	#portfolio .topicWrapper {
 		display: -webkit-box;

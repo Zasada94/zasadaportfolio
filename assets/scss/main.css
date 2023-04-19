@@ -195,6 +195,7 @@
           justify-content: flex-start;
   width: 30%;
   color: #eeeeee;
+  text-align: center;
 }
 
 .portfolio .projectTitleWrapper .projectInfo {
@@ -322,22 +323,13 @@
   opacity: 75%;
 }
 
-@media (min-width: 480px) {
-  #portfolio {
-    padding: 70px 40px 0 40px;
-  }
-}
-@media (min-width: 720px) {
-  #portfolio {
-    padding: 70px 100px 0 100px;
-  }
-}
 @media (min-width: 1080px) {
   #portfolio {
     text-align: start;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding: 70px 100px 0 100px;
   }
   #portfolio .topicWrapper {
     display: -webkit-box;
