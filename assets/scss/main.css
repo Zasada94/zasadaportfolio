@@ -459,6 +459,11 @@
   cursor: pointer;
 }
 
+@media (min-width: 1080px) {
+  .menu-icon {
+    display: none;
+  }
+}
 .menu-line {
   width: 100%;
   height: 3px;

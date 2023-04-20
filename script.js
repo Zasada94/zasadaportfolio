@@ -28,6 +28,7 @@ menuItems.forEach((item) => {
 		}
 	});
 });
+
 const swiper = new Swiper(".swiper", {
 	// Optional parameters
 	direction: "horizontal",
