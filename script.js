@@ -1,8 +1,8 @@
 const burger = document.querySelector(".burger");
-const iconBurger = document.querySelector(".fa-bars");
-const iconX = document.querySelector(".fa-solid.fa-xmark");
 const column = document.querySelector("aside");
 const menuItems = document.querySelectorAll(".menuItem");
+
+const menuIcon = document.querySelector(".menu-icon");
 
 const header = document.querySelector(".headerContainer");
 const footer = document.querySelector(".footerWrapper");
@@ -15,16 +15,15 @@ document.addEventListener("scroll", function () {
 	}
 });
 
-burger.addEventListener("click", () => {
-	iconBurger.classList.toggle("show");
-	iconX.classList.toggle("show");
+menuIcon.addEventListener("click", function () {
 	column.classList.toggle("show");
+	menuIcon.classList.toggle("menu-open");
 });
+
 menuItems.forEach((item) => {
 	item.addEventListener("click", () => {
 		if (window.innerWidth < 1080) {
-			iconBurger.classList.toggle("show");
-			iconX.classList.toggle("show");
+			menuIcon.classList.toggle("menu-open");
 			column.classList.toggle("show");
 		}
 	});
