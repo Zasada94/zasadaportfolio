@@ -17,6 +17,12 @@
 	width: 100vw;
 }
 
+.nonCommercial {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #portfolio .topicHeader {
 	max-width: 1400px;
 	width: 95%;
@@ -330,7 +336,8 @@
 	}
 
 	.portfolio .projectContainer {
-		padding: 0 10%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	#portfolio .topicWrapper {
