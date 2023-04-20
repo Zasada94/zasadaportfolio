@@ -51,5 +51,4 @@ window.onscroll = function (ev) {
 
 const footerDate = document.getElementById("footerDate");
 let objectDate = new Date();
-console.log(objectDate.getFullYear());
 footerDate.innerHTML = objectDate.getFullYear();
