@@ -1214,7 +1214,6 @@ div.line {
   align-items: center;
   max-width: 1400px;
   overflow: hidden;
-  width: 90%;
 }
 
 .referenciesWrapper {
@@ -1294,7 +1293,7 @@ div.line {
 }
 @media (min-width: 1080px) {
   #referencies {
-    padding: 70px 100px 40px 100px;
+    padding: 70px 50px 40px 50px;
     text-align: start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
