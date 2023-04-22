@@ -843,26 +843,26 @@ main {
 
 /* contact button */
 .contactButton {
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--second)), to(white));
-  background-image: linear-gradient(to right, var(--second), white);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(224, 224, 224)), to(white));
+  background-image: linear-gradient(to right, rgb(224, 224, 224), white);
   text-decoration: none;
   margin-top: 30px;
   padding: 12px 35px;
-  border: 4px solid var(--first);
-  border-radius: 23px;
+  border: 2px solid var(--first);
+  border-radius: 1px;
   font-size: 25px;
   font-weight: 700;
   color: var(--first);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contactButton:hover {
   cursor: pointer;
-  color: var(--second);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--first)), to(var(--second)));
-  background-image: linear-gradient(to right, var(--first), var(--second));
-  border-color: var(--second);
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--first)), to(rgb(224, 224, 224)));
+  background-image: linear-gradient(to right, var(--first), rgb(224, 224, 224));
+  border-color: var(--first);
 }
 
 @media (min-width: 400px) {
