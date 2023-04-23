@@ -147,8 +147,8 @@
 	margin: 3% 2%;
 	border: 2px solid var(--first);
 	border-radius: 30px;
-	-webkit-box-shadow: 5px 5px 10px 1px var(--first);
-	box-shadow: 5px 5px 10px 1px var(--first);
+	-webkit-box-shadow: 2px 2px 4px 1px var(--first);
+	box-shadow: 2px 2px 4px 1px var(--first);
 	overflow: hidden;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .portfolio .projectContainer:nth-child(3n) {
-	background-color: rgb(33, 37, 41)
+	background-color: rgb(33, 37, 41);
 }
 .portfolio .projectContainer:nth-child(3n-1) {
 	background-color: rgb(0, 33, 52);
@@ -254,15 +254,15 @@
 		linear,
 		left top,
 		right top,
-		from(var(--second)),
+		from(rgb(224, 224, 224)),
 		to(white)
 	);
-	background-image: linear-gradient(to right, var(--second), white);
+	background-image: linear-gradient(to right, rgb(224, 224, 224), white);
 	text-decoration: none;
 	margin: 15px 0;
 	padding: 10px 30px;
 	border: 2px solid var(--first);
-	border-radius: 18px;
+	border-radius: 3px;
 	font-size: 20px;
 	font-weight: 700;
 	color: var(--first);
@@ -279,10 +279,10 @@
 		linear,
 		left top,
 		right top,
-		from(var(--first)),
-		to(var(--second))
+		from(rgb(224, 224, 224)),
+		to(var(--first))
 	);
-	background-image: linear-gradient(to right, var(--first), var(--second));
+	background-image: linear-gradient(to right, var(--first), rgb(224, 224, 224));
 	border-color: var(--second);
 	-webkit-box-shadow: inset 2px 2px 5px 1px var(--first);
 	box-shadow: inset 2px 2px 5px 1px var(--first);
