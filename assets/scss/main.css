@@ -671,6 +671,7 @@ aside.show {
 }
 /* Tytuł i main */
 main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,6 +682,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .titleWrapper {
@@ -706,6 +708,8 @@ main {
 }
 
 .titleWrapper h2 {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,6 +772,8 @@ main {
   }
 }
 .titleWrapper p {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   text-align: center;
   padding-top: 30px;
@@ -776,6 +782,8 @@ main {
 
 /* main icons */
 .landingIcons {
+  position: relative;
+  z-index: 1;
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,6 +851,8 @@ main {
 
 /* contact button */
 .contactButton {
+  position: relative;
+  z-index: 1;
   background-image: -webkit-gradient(linear, left top, right top, from(rgb(224, 224, 224)), to(white));
   background-image: linear-gradient(to right, rgb(224, 224, 224), white);
   text-decoration: none;
@@ -905,8 +915,36 @@ main {
     height: 150px;
   }
 }
+.svg-square-right {
+  position: absolute;
+  top: 0px;
+  right: -320px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media (max-width: 800px) {
+  .svg-square-right {
+    right: -680px;
+  }
+}
+
+.svg-square-left {
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media (max-width: 800px) {
+  .svg-square-left {
+    left: -280px;
+  }
+}
+
 /* about me section styling */
 #aboutMe {
+  position: relative;
+  z-index: 1;
   padding-top: 70px;
   text-align: center;
   display: -webkit-box;
@@ -925,11 +963,16 @@ main {
 }
 
 .profilePhoto img {
+  position: relative;
+  z-index: 1;
   width: 60%;
   margin: 20px 0;
+  border-radius: 100%;
 }
 
 .aboutMeWrapper {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,30 +984,42 @@ main {
 }
 
 .topicHeader h2 {
+  position: relative;
+  z-index: 1;
   color: var(--about);
   font-size: 30px;
 }
 
 .topicHeader h3 {
+  position: relative;
+  z-index: 1;
   font-weight: 500;
   font-size: 20px;
 }
 
 .topicHeader h3 span {
+  position: relative;
+  z-index: 1;
   font-weight: 700;
   color: var(--about);
 }
 
 .aboutMeWrapper p {
+  position: relative;
+  z-index: 1;
   margin: 20px 0;
   font-size: 15px;
 }
 
 .aboutMeWrapper p span {
+  position: relative;
+  z-index: 1;
   font-weight: 700;
 }
 
 .topicWrapper {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,12 +1036,16 @@ main {
 }
 
 .topicIcon {
+  position: relative;
+  z-index: 1;
   color: var(--about);
   margin: 10px 10px;
   font-size: 25px;
 }
 
 div.line {
+  position: relative;
+  z-index: 1;
   height: 1px;
   width: 100%;
   background-color: var(--about);
@@ -1502,6 +1561,7 @@ html {
   height: 500px;
   max-width: 1400px;
   background-color: white;
+  overflow-x: hidden;
 }
 
 body {

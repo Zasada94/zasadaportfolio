@@ -222,6 +222,7 @@ aside.show {
 }
 /* Tytuł i main */
 main {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -232,6 +233,7 @@ main {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	overflow-x: hidden;
 }
 
 .titleWrapper {
@@ -257,6 +259,8 @@ main {
 }
 
 .titleWrapper h2 {
+	position: relative;
+	z-index: 1;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -325,6 +329,8 @@ main {
 	}
 }
 .titleWrapper p {
+	position: relative;
+	z-index: 1;
 	display: inline-block;
 	text-align: center;
 	padding-top: 30px;
@@ -333,6 +339,8 @@ main {
 
 /* main icons */
 .landingIcons {
+	position: relative;
+	z-index: 1;
 	width: 95%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -401,6 +409,8 @@ main {
 
 /* contact button */
 .contactButton {
+	position: relative;
+	z-index: 1;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
@@ -473,5 +483,25 @@ main {
 	.landingIcons div img {
 		width: 150px;
 		height: 150px;
+	}
+}
+
+.svg-square-right {
+	position: absolute;
+	top: 0px;
+	right: -320px;
+	transform: rotate(45deg);
+	@media (max-width: 800px) {
+		right: -680px;
+	}
+}
+
+.svg-square-left {
+	position: absolute;
+	top: 0px;
+	left: -200px;
+	transform: rotate(45deg);
+	@media (max-width: 800px) {
+		left: -280px;
 	}
 }

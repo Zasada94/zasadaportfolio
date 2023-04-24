@@ -1,5 +1,7 @@
 /* about me section styling */
 #aboutMe {
+	position: relative;
+	z-index: 1;
 	padding-top: 70px;
 	text-align: center;
 	display: -webkit-box;
@@ -18,11 +20,16 @@
 }
 
 .profilePhoto img {
+	position: relative;
+	z-index: 1;
 	width: 60%;
 	margin: 20px 0;
+	border-radius: 100%;
 }
 
 .aboutMeWrapper {
+	position: relative;
+	z-index: 1;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -34,30 +41,42 @@
 }
 
 .topicHeader h2 {
+	position: relative;
+	z-index: 1;
 	color: var(--about);
 	font-size: 30px;
 }
 
 .topicHeader h3 {
+	position: relative;
+	z-index: 1;
 	font-weight: 500;
 	font-size: 20px;
 }
 
 .topicHeader h3 span {
+	position: relative;
+	z-index: 1;
 	font-weight: 700;
 	color: var(--about);
 }
 
 .aboutMeWrapper p {
+	position: relative;
+	z-index: 1;
 	margin: 20px 0;
 	font-size: 15px;
 }
 
 .aboutMeWrapper p span {
+	position: relative;
+	z-index: 1;
 	font-weight: 700;
 }
 
 .topicWrapper {
+	position: relative;
+	z-index: 1;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -74,12 +93,16 @@
 }
 
 .topicIcon {
+	position: relative;
+	z-index: 1;
 	color: var(--about);
 	margin: 10px 10px;
 	font-size: 25px;
 }
 
 div.line {
+	position: relative;
+	z-index: 1;
 	height: 1px;
 	width: 100%;
 	background-color: var(--about);
