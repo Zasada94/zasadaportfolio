@@ -164,24 +164,21 @@ aside.show {
 	align-items: center;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center;
+	justify-content: flex-start;
 	text-decoration: none;
 	font-weight: 700;
-	border: 3px solid var(--first);
+	border-bottom: 0.5px solid var(--first);
 	width: 60%;
 	height: 100%;
 	margin-top: 20px;
-	border-radius: 20px;
 	color: var(--first);
-	font-size: 30px;
+	font-size: 26px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .menu a:hover {
-	color: var(--second);
-	border-color: var(--second);
-	background-color: var(--first);
+	opacity: 0.5;
 }
 
 @media (orientation: landscape) {
@@ -202,12 +199,17 @@ aside.show {
 		padding-top: 0;
 	}
 	.menu a {
-		border: none;
+		justify-content: center;
 		font-size: 23px;
-		margin: 20px 5px 0 5px;
+		margin: 10px 5px 0 5px;
 		padding: 0 5px 0 5px;
 		-webkit-transition: 0.5s;
 		transition: 0.5s;
+		border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+	}
+
+	.menu a:hover {
+		border-bottom: 0.5px solid var(--first);
 	}
 	aside {
 		top: 0;
@@ -294,7 +296,7 @@ main {
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: textclip 10s linear infinite;
 	animation: textclip 10s linear infinite;
-	font-size: 40px;
+	font-size: 42px;
 }
 
 @-webkit-keyframes textclip {
@@ -311,7 +313,6 @@ main {
 .titleWrapper h2 span {
 	-webkit-animation: textclip2 10s linear infinite;
 	animation: textclip2 10s linear infinite;
-	margin-bottom: 5px;
 }
 
 @-webkit-keyframes textclip2 {
@@ -359,7 +360,7 @@ main {
 	text-align: center;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	padding-top: 30px;
+	padding-top: 40px;
 }
 
 .landingIcons div {
