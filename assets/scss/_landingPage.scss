@@ -7,6 +7,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 @media (min-width: 1080px) {
@@ -65,7 +66,7 @@ aside {
 .headerContainer {
 	position: fixed;
 	top: 0;
-	height: 70px;
+	height: 65px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -98,13 +99,14 @@ aside {
 	justify-content: space-between;
 	cursor: pointer;
 	padding-right: 10px;
+	padding-top: 5px;
 	color: var(--first);
 	text-decoration: none;
 }
 
 .logo {
 	font-size: 33px;
-	padding: 10px 5px 10px 15px;
+	padding: 5px 5px 10px 15px;
 	background-image: -webkit-gradient(
 		linear,
 		left top,
@@ -119,10 +121,11 @@ aside {
 
 .homeContainer h1 {
 	font-size: 22px;
+	line-height: 85%;
 }
 
 .homeContainer span {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 /* Navigation menu */
