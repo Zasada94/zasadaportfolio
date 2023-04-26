@@ -968,6 +968,11 @@ main {
   width: 90%;
 }
 
+.aboutMe small {
+  color: var(--about);
+  font-size: 17px;
+}
+
 .profilePhoto img {
   position: relative;
   z-index: 1;
@@ -1003,11 +1008,12 @@ main {
   font-size: 20px;
 }
 
-.topicHeader h3 span {
+.topicHeader h3 span, .aboutMe h3 span {
   position: relative;
   z-index: 1;
   font-weight: 700;
   color: var(--about);
+  font-size: 22px;
 }
 
 .aboutMeWrapper p {
@@ -1055,7 +1061,6 @@ div.line {
   height: 1px;
   width: 100%;
   background-color: var(--about);
-  margin: 14px 0 0 0;
 }
 
 @media (min-width: 720px) {
@@ -1085,7 +1090,7 @@ div.line {
     width: 30%;
   }
   .profilePhoto img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .topicWrapper {
