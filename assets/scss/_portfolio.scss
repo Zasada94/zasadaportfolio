@@ -155,7 +155,7 @@
 .portfolio .projectContainer {
 	display: flex;
 	width: 100vw;
-	height: 700px;
+	height: auto;
 	background-color: rgb(34, 34, 34);
 	padding: 40px 0;
 }
@@ -189,6 +189,7 @@
 	align-items: center;
 	justify-content: flex-start;
 	width: 50%;
+	height: auto;
 	color: #eeeeee;
 	text-align: center;
 }
@@ -197,7 +198,7 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	height: 20px;
+	height: auto;
 	padding: 20px 20px;
 	font-weight: 700;
 	font-size: 22px;
