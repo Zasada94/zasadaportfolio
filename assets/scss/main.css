@@ -995,6 +995,10 @@ main {
   color: var(--first);
 }
 
+.aboutMeTitle {
+  margin-bottom: 10px;
+}
+
 .topicHeader h2 {
   position: relative;
   z-index: 1;
@@ -1009,7 +1013,8 @@ main {
   font-size: 20px;
 }
 
-.topicHeader h3 span, .aboutMe h3 span {
+.topicHeader h3 span,
+.aboutMe h3 span {
   position: relative;
   z-index: 1;
   font-weight: 700;
@@ -1017,17 +1022,29 @@ main {
   font-size: 22px;
 }
 
-.aboutMeWrapper p {
+.aboutMeWrapper p,
+.expDate,
+.expCompany {
   position: relative;
   z-index: 1;
-  margin: 20px 0;
+  margin: 0 0;
   font-size: 15px;
 }
 
-.aboutMeWrapper p span {
+.aboutMeWrapper .description {
+  margin: 10px 0;
+}
+
+.aboutMeWrapper p span,
+.expName,
+.expCompany {
   position: relative;
   z-index: 1;
   font-weight: 700;
+}
+
+.aboutMeWrapper .expCompany {
+  margin-bottom: 15px;
 }
 
 .topicWrapper {
