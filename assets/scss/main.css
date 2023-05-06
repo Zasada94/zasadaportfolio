@@ -174,7 +174,6 @@
 }
 
 .portfolio .projectVideo {
-  height: 100%;
   width: 50%;
   background-image: url(../../images/iphone.png);
   background-repeat: no-repeat;
@@ -417,10 +416,10 @@
     padding-right: 20%;
   }
   .portfolio .projectVideo {
-    width: 60%;
+    width: 50%;
   }
   .portfolio .projectTitleWrapper {
-    width: 40%;
+    width: 50%;
   }
 }
 @media (max-width: 720px) {
@@ -429,18 +428,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 1400px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .portfolio .projectVideo {
-    height: 50%;
+    min-height: 700px;
     width: 80%;
   }
   .portfolio .projectTitleWrapper {
     height: 50%;
     width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .portfolio .video {
+    height: auto;
+    width: 82%;
   }
 }
 /* Header burger */
