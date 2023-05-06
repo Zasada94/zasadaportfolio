@@ -231,6 +231,10 @@
   text-align: left;
 }
 
+.portfolio .projectTitleWrapper .technologies p {
+  margin: 0 1px;
+}
+
 .portfolio .projectTitleWrapper .features {
   display: -webkit-box;
   display: -ms-flexbox;
