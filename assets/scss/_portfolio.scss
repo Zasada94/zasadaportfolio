@@ -104,7 +104,6 @@
 .portfolio img {
 	width: 100%;
 	height: auto;
-	z-index: 1;
 }
 
 .portfolio {
@@ -125,7 +124,6 @@
 	position: relative;
 	overflow: hidden;
 	margin: 0 10px 0 5px;
-	z-index: 2;
 }
 
 .portfolio .projectWrapper {
@@ -311,12 +309,12 @@
 
 
 .portfolio .imageHover {
-	width: 13%;
+	width: 100px;
 	height: 100%;
 	background-color: #1c3953;
 	position: absolute;
 	top: 0;
-	left: -13%;
+	left: -100px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	font-size: 20px;
@@ -335,7 +333,6 @@
 	top: 0;
 	left: 0%;
 	opacity: 50%;
-	z-index: 0;
 }
 
 @media (min-width: 1080px) {
