@@ -14,6 +14,7 @@ Project was created with:
 * JavaScript
 * Animate On Scroll
 * Swiper.js
+* Preloader.js
 
 ## Functionalities
 In project You are able to:
