@@ -312,6 +312,7 @@
 .portfolio .imageHover {
 	width: 150px;
 	height: 100%;
+	padding-top: 10px;
 	background-color: #1c3953;
 	position: absolute;
 	top: 0;
@@ -414,6 +415,12 @@
 	.portfolio .projectTitleWrapper {
 		height: 50%;
 		width: 90%;
+	}
+
+	.portfolio .imageHover p {
+		min-height: 5px;
+		padding: 5px 15px;
+		font-size: 18px;
 	}
 }
 @media (max-width: 450px) {
