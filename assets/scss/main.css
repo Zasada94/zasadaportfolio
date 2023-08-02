@@ -1618,5 +1618,102 @@ body {
 }
 
 #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#preloader p {
+  font-size: 22px;
+}
+
+/* Add the loading spinner animation */
+.spinner {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  -webkit-animation: spinner 2.8s infinite linear;
+          animation: spinner 2.8s infinite linear;
+}
+
+.spinner div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #000;
+  border-radius: 50%;
+  -webkit-animation: spinner 2.4s infinite ease;
+          animation: spinner 2.4s infinite ease;
+  border-color: #000 transparent transparent transparent;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-color: transparent #000 transparent transparent;
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-color: transparent transparent #000 transparent;
+  }
+  75% {
+    -webkit-transform: rotate(540deg);
+            transform: rotate(540deg);
+    border-color: transparent transparent transparent #000;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    border-color: #000 transparent transparent transparent;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-color: transparent #000 transparent transparent;
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-color: transparent transparent #000 transparent;
+  }
+  75% {
+    -webkit-transform: rotate(540deg);
+            transform: rotate(540deg);
+    border-color: transparent transparent transparent #000;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    border-color: #000 transparent transparent transparent;
+  }
 }/*# sourceMappingURL=main.css.map */

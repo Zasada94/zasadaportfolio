@@ -14,6 +14,9 @@ queue.loadFile("./video/worldcup.mp4");
 queue.on("complete", function () {
 	preloader.style.display = "none";
 	wholeWrapper.style.display = "block";
+	AOS.init({
+		offset: 250,
+	});
 });
 
 const burger = document.querySelector(".burger");
