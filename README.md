@@ -26,12 +26,15 @@ In project You are able to:
 
 
 ## Screens  
+Home section
 ![Screenshot](./images/screenshots/1.png)
 
+Portfolio
 ![Screenshot](./images/screenshots/2.png)
 
 ![Screenshot](./images/screenshots/3.png)
 
+reccommendations and contact
 ![Screenshot](./images/screenshots/4.png)
 
 ## Live :star2:
