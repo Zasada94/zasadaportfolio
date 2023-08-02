@@ -179,6 +179,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  position: relative;
 }
 
 .portfolio .video {
@@ -343,7 +344,7 @@
 }
 
 .portfolio .imageHover {
-  width: 100px;
+  width: 150px;
   height: 100%;
   background-color: #1c3953;
   position: absolute;
@@ -354,11 +355,12 @@
   font-size: 20px;
   text-align: start;
   border-radius: 5px;
+  overflow: wrap;
 }
 
 .portfolio .imageHover p {
-  height: 20px;
-  padding: 20px 20px;
+  min-height: 10px;
+  padding: 10px 20px;
   font-weight: 700;
   color: #eeeeee;
 }
@@ -1398,10 +1400,10 @@ div.line {
     justify-content: space-around;
   }
   .swiper {
-    width: 70vw;
+    max-width: 70vw;
   }
   .swiper-wrapper img {
-    padding: 70px 150px 20px 120px;
+    padding: 70px 180px 20px 180px;
   }
 }
 /* contact section styling */
