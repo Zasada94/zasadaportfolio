@@ -34,7 +34,7 @@ Portfolio
 
 ![Screenshot](./images/screenshots/3.png)
 
-reccommendations and contact
+Recommendations and contact
 ![Screenshot](./images/screenshots/4.png)
 
 ## Live :star2:
