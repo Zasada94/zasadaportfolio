@@ -1,11 +1,9 @@
 const burger = document.querySelector(".burger");
 const column = document.querySelector("aside");
 const menuItems = document.querySelectorAll(".menuItem");
-
 const menuIcon = document.querySelector(".menu-icon");
-
 const header = document.querySelector(".headerContainer");
-const footer = document.querySelector(".footerWrapper");
+
 
 document.addEventListener("scroll", function () {
 	if (window.pageYOffset == 0) {

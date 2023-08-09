@@ -1,3 +1,6 @@
+const footerDateDiv = document.getElementById("footerDate");
+const footer = document.querySelector(".footerWrapper");
+
 window.onscroll = function (ev) {
 	if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
 		footer.classList.add("down");
@@ -6,6 +9,5 @@ window.onscroll = function (ev) {
 	}
 };
 
-const footerDate = document.getElementById("footerDate");
 let objectDate = new Date();
-footerDate.innerHTML = objectDate.getFullYear();
+footerDateDiv.innerHTML = objectDate.getFullYear();

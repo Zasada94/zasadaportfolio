@@ -34,5 +34,4 @@ queue.on("complete", function () {
 	// videos[3].src = winiaryVid.src;
 	// videos[4].src = heinzVid.src;
 	// videos[5].src = pandoraVid.src;
-
 });
