@@ -1,4 +1,4 @@
-const footerDateDiv = document.getElementById("footerDate");
+const footerDate = document.getElementById("footerDate");
 const footer = document.querySelector(".footerWrapper");
 
 window.onscroll = function (ev) {
@@ -10,4 +10,4 @@ window.onscroll = function (ev) {
 };
 
 let objectDate = new Date();
-footerDateDiv.innerHTML = objectDate.getFullYear();
+footerDate.innerHTML = objectDate.getFullYear();

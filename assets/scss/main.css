@@ -1241,8 +1241,8 @@ div.line {
 }
 
 .technologies img {
-  width: 75px;
   height: 75px;
+  width: auto;
   margin: 30px;
 }
 
@@ -1303,8 +1303,8 @@ div.line {
     font-size: 35px;
   }
   .technologies img {
-    width: 115px;
-    height: 115px;
+    height: 85px;
+    width: auto;
     margin: 50px;
   }
 }
@@ -1565,8 +1565,8 @@ div.line {
 .down {
   background-color: var(--first);
   color: var(--second);
-  -webkit-box-shadow: 0 -1px 5px var(--first);
-  box-shadow: 0 -1px 5px var(--first);
+  -webkit-box-shadow: 0 -1px 1px var(--first);
+  box-shadow: 0 -1px 1px var(--first);
 } 
 html {
   scroll-behavior: smooth;
