@@ -11,3 +11,9 @@ window.onscroll = function (ev) {
 
 let objectDate = new Date();
 footerDate.innerHTML = objectDate.getFullYear();
+
+const startYear = 2021;
+const currentYear = new Date().getFullYear();
+const yearsOfExperience = currentYear - startYear;
+
+document.getElementById("experience-years").textContent = yearsOfExperience;

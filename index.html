@@ -1,815 +1,986 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Paweł Zasada - Front-End Developer</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+			integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/scss/main.css" />
+		<script
+			src="https://kit.fontawesome.com/ded1dcb2d2.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paweł Zasada - Front-End Developer</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/scss/main.css">
-    <script src="https://kit.fontawesome.com/ded1dcb2d2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+	<body id="body">
+		<div id="preloader">
+			<div class="spinner">
+				<div></div>
+			</div>
+			<p>Loading...</p>
+		</div>
+		<div id="wholeWrapper">
+			<header class="headerContainer">
+				<a class="homeContainer" href="#home">
+					<div class="logo">
+						<i class="fa-solid fa-igloo"></i>
+					</div>
+					<div class="logoInner">
+						<h1>Paweł Zasada</h1>
+						<span>Full-stack developer</span>
+					</div>
+				</a>
+				<div class="menu-icon">
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+				</div>
+				<aside>
+					<nav class="menu">
+						<a class="menuItem" href="#home">Home</a>
+						<a class="menuItem" href="#aboutMe">About Me</a>
+						<a class="menuItem" href="#technologies">Technologies</a>
+						<a class="menuItem" href="#portfolio">Portfolio</a>
+						<a class="menuItem" href="#referencies">Referencies</a>
+						<a class="menuItem" href="#contact">Contact</a>
+					</nav>
+				</aside>
+			</header>
+			<main id="home">
+				<section class="titleWrapper">
+					<div>
+						<h2>
+							<span class="animation"> FULL-STACK </span>
+							<span>DEVELOPER</span>
+						</h2>
+					</div>
+					<div>
+						<p>From Idea to Interface</p>
+					</div>
+					<div class="landingIcons">
+						<div class="landingIcon1">
+							<img src="./images/svg/computer-tv-svgrepo-com.svg" alt="" />
+							<p>QUICK</p>
+						</div>
+						<div class="landingIcon2">
+							<img src="./images/svg/internet-www-svgrepo-com.svg" alt="" />
+							<p>WORLDWIDE</p>
+						</div>
+						<div class="landingIcon3">
+							<img src="./images/svg/stats-graph-svgrepo-com.svg" alt="" />
+							<p>RESPONSIVE</p>
+						</div>
+						<div class="landingIcon3">
+							<img src="./images/svg/calendar-svgrepo-com.svg" alt="" />
+							<p>ON TIME</p>
+						</div>
+					</div>
+					<a href="#contact" class="contactButton">
+						<span>Contact me</span>
+					</a>
+					<div class="svg-square-left">
+						<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+							<defs>
+								<linearGradient id="myGradient" gradientTransform="rotate(90)">
+									<stop offset="5%" stop-color="#6A98F0" />
+									<stop offset="95%" stop-color="#4961DC" />
+								</linearGradient>
+							</defs>
+							<rect
+								width="400"
+								height="400"
+								x="0"
+								y="0"
+								fill="url('#myGradient')"
+							/>
+						</svg>
+					</div>
+					<div class="svg-square-right">
+						<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800">
+							<defs>
+								<linearGradient id="myGradient" gradientTransform="rotate(90)">
+									<stop offset="5%" stop-color="#6A98F0" />
+									<stop offset="95%" stop-color="#4961DC" />
+								</linearGradient>
+							</defs>
+							<rect
+								width="800"
+								height="800"
+								x="0"
+								y="0"
+								fill="url('#myGradient')"
+							/>
+						</svg>
+					</div>
+				</section>
+				<section id="aboutMe">
+					<div
+						class="aboutMeWrapper"
+						data-aos="fade-right"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<div class="topicHeader">
+							<div class="topicWrapper">
+								<h2>About me</h2>
+								<div class="topicIcon">
+									<i class="fa-brands fa-connectdevelop"></i>
+								</div>
+							</div>
+							<h3>
+								<div class="aboutMeTitle">
+									I am a <span>Full-stack developer</span> offering various
+									programming services
+								</div>
+								<span>My experience:</span>
+							</h3>
+							<div class="line"></div>
+						</div>
+						<div class="aboutMe">
+							<div class="expDate">01.10.2023 - currently</div>
+							<div class="expName">
+								<span><small>CEO & developer</small></span>
+							</div>
+							<div class="expCompany">
+								<span>Paweł Zasada Development</span>
+							</div>
+							<div class="expDate">01.10.2022 - 31.03.2023</div>
+							<div class="expName">
+								<span><small>JavaScript Developer</small></span>
+							</div>
+							<div class="expCompany">
+								<span> PostSticker</span>
+							</div>
+							<div class="expDate">01.03.2022 - 31.05.2022</div>
+							<div class="expName">
+								<span><small>Associate in the IT Support Team</small></span>
+							</div>
+							<div class="expCompany">
+								<span> PKO Ubezpieczenia</span>
+							</div>
+							<h3>
+								<span>My diplomas:</span>
+							</h3>
+							<div class="line"></div>
+							<div class="expName">
+								<span
+									><small
+										>Civil Engineering studies with a title of Master of Science
+									</small></span
+								>
+							</div>
+							<div class="expCompany">
+								<span> Warsaw University of Technology</span>
+							</div>
+							<div class="expName">
+								<span
+									><small
+										>Computer Science Diploma in Frontend Development with React
+									</small></span
+								>
+							</div>
+							<div class="expCompany">
+								<span> Kozminsky University</span>
+							</div>
+							<div class="line"></div>
+							<p class="description">
+								I have<span>
+									<span id="experience-years"></span> years of experience</span
+								>
+								in programming. Currently I am working on
+								<span>HbbTV VOD app</span> for a big television company. I have
+								also coded various websites inlcuding
+								<span>next.js technology</span>. I am a huge fan of
+								<span>english language.</span>
+							</p>
+						</div>
+					</div>
+					<div
+						class="profilePhoto"
+						data-aos="fade-left"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<img src="./images/profilePhoto.png" alt="" />
+					</div>
+				</section>
+				<section id="technologies">
+					<div
+						class="technologiesWrapper"
+						data-aos="fade-left"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<div class="topicHeader">
+							<div class="topicWrapper">
+								<h2>Technologies</h2>
+								<div class="topicIcon">
+									<i class="fa-solid fa-microchip"></i>
+								</div>
+							</div>
+							<h3><span>Skills</span> sharpened up:</h3>
+							<div class="line"></div>
+						</div>
+						<div class="technologies">
+							<img src="./images/svg/techIcons/js-svgrepo-com.svg" alt="" />
 
-</head>
+							<img src="./images/svg/techIcons/next-js.svg" alt="" />
+							<img src="./images/svg/techIcons/python.svg" alt="" />
+							<img src="./images/svg/techIcons/php2-svgrepo-com.svg" alt="" />
+							<img src="./images/svg/techIcons/sass-svgrepo-com.svg" alt="" />
+							<img
+								src="./images/svg/techIcons/git-icon-svgrepo-com.svg"
+								alt=""
+							/>
+							<img src="./images/svg/techIcons/react-svgrepo-com.svg" alt="" />
+							<img src="./images/svg/techIcons/api.svg" alt="" />
+							<img src="./images/svg/techIcons/html-5-svgrepo-com.svg" alt="" />
+							<img
+								src="./images/svg/techIcons/css-3-logo-svgrepo-com.svg"
+								alt=""
+							/>
+							<img src="./images/svg/techIcons/material-ui.svg" alt="" />
+							<img src="./images/svg/techIcons/styled-components.svg" alt="" />
+							<img src="./images/svg/techIcons/canvas.svg" alt="" />
+							<img src="./images/svg/techIcons/css-animate-scroll.jpg" alt="" />
+							<img
+								src="./images/svg/techIcons/node-js-svgrepo-com.svg"
+								alt=""
+							/>
+							<img src="./images/svg/techIcons/mongoose.png" alt="" />
 
+							<img
+								src="./images/svg/techIcons/bootstrap-4-logo-svgrepo-com.svg"
+								alt=""
+							/>
 
-<body id="body">
-    <div id="preloader">
-        <div class="spinner">
-            <div></div>
-        </div>
-        <p> Loading...</p>
-    </div>
-    <div id="wholeWrapper">
-        <header class="headerContainer">
-            <a class="homeContainer" href="#home">
-            <div class="logo">
-                <i class="fa-solid fa-igloo"></i>
-            </div>
-            <div class="logoInner">
-                <h1>
-                    Paweł Zasada</h1>
-                <span>Full-stack developer</span>
-            </div>
-        </a>
-            <div class="menu-icon">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-            </div>
-            <aside>
-                <nav class="menu">
+							<img src="./images/svg/techIcons/testjs-svgrepo-com.svg" alt="" />
 
-                    <a class="menuItem" href="#home">Home</a>
-                    <a class="menuItem" href="#aboutMe">About Me</a>
-                    <a class="menuItem" href="#technologies">Technologies</a>
-                    <a class="menuItem" href="#portfolio">Portfolio</a>
-                    <a class="menuItem" href="#referencies">Referencies</a>
-                    <a class="menuItem" href="#contact">Contact</a>
-                </nav>
-            </aside>
-        </header>
-        <main id="home">
-            <section class="titleWrapper">
-                <div>
-                    <h2>
-                        <span class="animation">
-                        FULL-STACK
-                    </span>
-                        <span>DEVELOPER</span>
-                    </h2>
-                </div>
-                <div>
-                    <p>
-                        From Idea to Interface
-                    </p>
-                </div>
-                <div class="landingIcons">
-                    <div class="landingIcon1">
-                        <img src="./images/svg/computer-tv-svgrepo-com.svg" alt="">
-                        <p>QUICK</p>
-                    </div>
-                    <div class="landingIcon2">
-                        <img src="./images/svg/internet-www-svgrepo-com.svg" alt="">
-                        <p>WORLDWIDE</p>
-                    </div>
-                    <div class="landingIcon3">
-                        <img src="./images/svg/stats-graph-svgrepo-com.svg" alt="">
-                        <p>RESPONSIVE</p>
-                    </div>
-                    <div class="landingIcon3">
-                        <img src="./images/svg/calendar-svgrepo-com.svg" alt="">
-                        <p>ON TIME</p>
-                    </div>
-                </div>
-                <a href="#contact" class="contactButton">
-                <span>Contact me</span>
-            </a>
-                <div class="svg-square-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
-                        <defs>
-                            <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                                <stop offset="5%" stop-color="#6A98F0" />
-                                <stop offset="95%" stop-color="#4961DC" />
-                            </linearGradient>
-                        </defs>
-                        <rect width="400" height="400" x="0" y="0" fill="url('#myGradient')" />
-                    </svg>
-                </div>
-                <div class="svg-square-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800">
-                        <defs>
-                            <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                                <stop offset="5%" stop-color="#6A98F0" />
-                                <stop offset="95%" stop-color="#4961DC" />
-                            </linearGradient>
-                        </defs>
-                        <rect width="800" height="800" x="0" y="0" fill="url('#myGradient')" />
-                    </svg>
-                </div>
-            </section>
-            <section id="aboutMe">
-                <div class="aboutMeWrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <div class="topicHeader">
-                        <div class="topicWrapper">
-                            <h2>About me</h2>
-                            <div class="topicIcon">
-                                <i class="fa-brands fa-connectdevelop"></i>
+							<img src="./images/svg/techIcons/express.svg" alt="" />
+						</div>
+					</div>
+					<div
+						class="technologiesWrapper"
+						data-aos="fade-right"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<div class="topicHeader">
+							<h3><span>Tools</span> I am using:</h3>
+							<div class="line"></div>
+						</div>
+						<div class="technologies">
+							<img src="./images/svg/techIcons/figma-svgrepo-com.svg" alt="" />
+							<img src="./images/svg/techIcons/postman.svg" alt="" />
+							<img src="./images/svg/techIcons/linux.svg" alt="" />
+							<img src="./images/svg/techIcons/ffmpeg.svg" alt="" />
+							<img src="./images/svg/techIcons/github-svgrepo-com.svg" alt="" />
+							<img
+								src="./images/svg/techIcons/visual-studio-code-svgrepo-com.svg"
+								alt=""
+							/>
+							<img src="./images/svg/techIcons/vercel.svg" alt="" />
+							<img src="./images/svg/techIcons/jira-svgrepo-com.svg" alt="" />
 
-                            </div>
-                        </div>
-                        <h3>
-                            <div class="aboutMeTitle">
-                                I am a <span>Full-stack developer</span> offering various programming services </div> <span>My experience:</span>
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="aboutMe">
-                        <p class="experience">
-                        <div class="expDate">
-                            01.10.2022 - 31.03.2023
-                        </div>
-                        <div class="expName"><span><small>JavaScript Developer</small></span></div>
-                        <div class="expCompany">
-                            <span> PostSticker</span>
-                        </div>
-                        <div class="expDate">
-                            01.03.2022 - 31.05.2022</div>
-                        <div class="expName">
-                            <span><small>Associate in the IT Support Team</small></span>
-                        </div>
-                        <div class="expCompany">
-                            <span> PKO Ubezpieczenia</span>
-                        </div>
+							<img src="./images/svg/techIcons/npm-svgrepo-com.svg" alt="" />
+							<img src="./images/svg/techIcons/vite-svgrepo-com.svg" alt="" />
+							<img
+								src="./images/svg/techIcons/photoshop-svgrepo-com.svg"
+								alt=""
+							/>
+							<img src="./images/svg/techIcons/mongo.svg" alt="" />
+							<img
+								src="./images/svg/techIcons/webpack-svgrepo-com.svg"
+								alt=""
+							/>
+						</div>
+					</div>
+				</section>
+				<section id="portfolio">
+					<div class="portfolioWrapper">
+						<div
+							class="topicHeader"
+							data-aos="fade-left"
+							data-aos-anchor-placement="top-bottom"
+							data-aos-duration="1000"
+						>
+							<div class="topicWrapper">
+								<h2>Portfolio</h2>
+								<div class="topicIcon">
+									<i class="fa-solid fa-briefcase"></i>
+								</div>
+							</div>
+							<h3><span>Commercial projects</span> worth checking out:</h3>
+							<div class="line"></div>
+						</div>
+						<div class="portfolio">
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Arkanoid Game</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+											<p>CANVAS</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>funny retro gameplay</li>
+											<li>counting entries and clicks- mobile and PC</li>
+											<li>collecting entered data e.g. emails, nicknames</li>
+											<li>score ranks</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls></video>
+								</div>
+							</div>
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Catcher Game</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+											<p>CANVAS</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>
+												catching and dodging falling objects with specified
+												rules
+											</li>
+											<li>advertising and marketing purpose</li>
+											<li>counting entries and clicks- mobile and PC</li>
+											<li>collecting entered data e.g. emails, nicknames</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls>
+										<source src="./video/pandora.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</div>
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Worldcup Shooter Game</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+											<p>CANVAS</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>
+												shooting goals with score counting and win / lose
+												scenario
+											</li>
+											<li>advertising and marketing purpose</li>
+											<li>counting entries and clicks- mobile and PC</li>
+											<li>collecting entered data e.g. emails, nicknames</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls>
+										<source src="./video/worldcup.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</div>
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Memory Game</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>classic memorising game</li>
+											<li>advertising and marketing purpose</li>
+											<li>counting entries and clicks- mobile and PC</li>
+											<li>collecting entered data e.g. emails, nicknames</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls>
+										<source src="./video/winiary.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</div>
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Simple Forms App</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>advertising and marketing purpose</li>
+											<li>counting entries and clicks- mobile and computer</li>
+											<li>
+												collecting entered data e.g. emails, nicknames as well
+												as other specified data
+											</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls>
+										<source src="./video/heinz.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</div>
+							<div class="projectContainer">
+								<div class="projectTitleWrapper">
+									<div class="projectTitle">Catcher Game</div>
+									<div class="projectInfo">
+										<p>Technologies:</p>
+										<div class="technologies">
+											<p>HTML</p>
+											<p>CSS</p>
+											<p>JS</p>
+											<p>PHP</p>
+										</div>
+										<div class="features">
+											<p>Features:</p>
+											<li>
+												catching and dodging falling objects with specified
+												rules and score ranks
+											</li>
+											<li>advertising and marketing purpose</li>
+											<li>counting entries and clicks- mobile and computer</li>
+											<li>collecting entered data e.g. emails, nicknames</li>
+											<li>keeping 16/9 proportions</li>
+										</div>
+									</div>
+								</div>
+								<div class="projectVideo">
+									<video class="video" controls>
+										<source src="./video/actimel.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							</div>
+						</div>
+						<div
+							class="topicHeader"
+							data-aos="fade-right"
+							data-aos-anchor-placement="top-bottom"
+							data-aos-duration="1000"
+						>
+							<h3>
+								<span>Commercial websites:</span>
+							</h3>
+							<div class="line"></div>
+						</div>
+						<div class="nonCommercial">
+							<div class="portfolio nonCommercial">
+								<div class="projectWrapper">
+									<div class="projectTitle">Build IT gallery</div>
+									<div class="projectImage">
+										<img src="./images/projects/buildit.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>next.js</p>
+										<p>swiper.js</p>
+										<p>lightbox.js</p>
+										<p>photo album</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://buildit-warszawa.pl/realizacje"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/buildIT"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="topicHeader"
+							data-aos="fade-right"
+							data-aos-anchor-placement="top-bottom"
+							data-aos-duration="1000"
+						>
+							<h3>
+								<span>Solved recruitment tasks:</span>
+							</h3>
+							<div class="line"></div>
+						</div>
+						<div class="nonCommercial">
+							<div class="portfolio nonCommercial">
+								<div class="projectWrapper">
+									<div class="projectTitle">Blog Search</div>
+									<div class="projectImage">
+										<img src="./images/projects/blogsearch.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>React</p>
+										<p>Styled components</p>
+										<p>Node.js</p>
+										<p>Express</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/blogsearch/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/blogsearch"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Cars Dealer</div>
+									<div class="projectImage">
+										<img src="./images/projects/carsdealer.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>React</p>
+										<p>SCSS</p>
+										<p>API</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/available-cars/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/available-cars"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        </p>
-                        <h3>
-                            <span>My diplomas:</span>
-                        </h3>
-                        <div class="line"></div>
-                        <p class="diplomas">
-                        <div class="expName"><span><small>Civil
-                        Engineering
-                        studies with a title of Master of Science
-                        </small></span></div>
-                        <div class="expCompany">
-                            <span> Warsaw University of Technology</span>
-                        </div>
-                        <div class="expName">
-                            <span><small>Computer Science Diploma in
-                            Frontend Development with React
-                            </small></span>
-                        </div>
-                        <div class="expCompany">
-                            <span> Kozminsky University</span>
-                        </div>
-                        <div class="line"></div>
-                        <p class="description">
-                            I also have<span> project management</span> experience in construction management. I am
-                            <span>friendly, comunicative and open-minded</span> person that gets along well with
-                            people. I am a huge fan of
-                            <span>english language.</span>
-                        </p>
-                        <p class="description">
-                            Projects I am coding are <span> high quality</span>. I am focused on <span>details, optimalisations, responsivness,
-                        and good code
-                        practices</span>.
-                        </p>
+						<div
+							class="topicHeader"
+							data-aos="fade-right"
+							data-aos-anchor-placement="top-bottom"
+							data-aos-duration="1000"
+						>
+							<h3>
+								<span>Non-commercial projects:</span>
+							</h3>
+							<div class="line"></div>
+						</div>
 
-                    </div>
-                </div>
-                <div class="profilePhoto" data-aos="fade-left" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <img src="./images/profilePhoto.png" alt="">
-                </div>
-            </section>
-            <section id="technologies">
-                <div class="technologiesWrapper" data-aos="fade-left" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <div class="topicHeader">
-                        <div class="topicWrapper">
-                            <h2>Technologies</h2>
-                            <div class="topicIcon">
-                                <i class="fa-solid fa-microchip"></i>
-                            </div>
-                        </div>
-                        <h3>
-                            <span>Skills</span> sharpened up:
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="technologies">
-                        <img src="./images/svg/techIcons/html-5-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/css-3-logo-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/js-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/react-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/git-icon-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/sass-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/php2-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/bootstrap-4-logo-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/css-animate-scroll.jpg" alt="">
-                        <img src="./images/svg/techIcons/node-js-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/testjs-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/canvas.svg" alt="">
-                        <img src="./images/svg/techIcons/material-ui.svg" alt="">
-                        <img src="./images/svg/techIcons/styled-components.svg" alt="">
-                        <img src="./images/svg/techIcons/express.svg" alt="">
-                        <img src="./images/svg/techIcons/mongoose.png" alt=""><img
-                            src="./images/svg/techIcons/next-js.svg" alt=""> <img src="./images/svg/techIcons/api.svg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="technologiesWrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <div class="topicHeader">
-                        <h3>
-                            <span>Tools</span> I am using:
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="technologies">
-                        <img src="./images/svg/techIcons/github-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/visual-studio-code-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/jira-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/figma-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/npm-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/vite-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/postman.svg" alt="">
-                        <img src="./images/svg/techIcons/mongo.svg" alt="">
+						<div class="nonCommercial">
+							<div class="portfolio nonCommercial">
+								<div class="projectWrapper">
+									<div class="projectTitle">Double Pizza</div>
+									<div class="projectImage">
+										<img src="./images/projects/pizza.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>React</p>
+										<p>Styled components</p>
+										<p>MUI</p>
+										<p>Redux</p>
+										<p>Node.js API</p>
+										<p>Mongoose</p>
+										<p>Express</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://double-pizza.netlify.app/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/pizza-portal"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Hero Fighting Game</div>
+									<div class="projectImage">
+										<img src="./images/projects/herofightgame.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+										<p>API</p>
+										<p>2 players</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/herofightgame/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/herofightgame"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Buduj z Zasadami</div>
+									<div class="projectImage">
+										<img src="./images/projects/budujzzasadami.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+										<p>React</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/buduj-z-zasadami/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/buduj-z-zasadami"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Surf & Ski & Sail</div>
+									<div class="projectImage">
+										<img src="./images/projects/surfskisail.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/surfskisail/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/surfskisail"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Pisses Me Off</div>
+									<div class="projectImage">
+										<img src="./images/projects/pissesmeoff.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+										<p>React</p>
+										<p>MUI</p>
+										<p>Redux</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/pissesmeoff"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/pissesmeoff"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Rock, Paper and Scissors</div>
+									<div class="projectImage">
+										<img src="./images/projects/rockpaperscissors.png" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/rockpaperscizors/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/rockpaperscizors"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">To Do List</div>
+									<div class="projectImage">
+										<img src="./images/projects/todolist.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/todolist/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/todolist"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Calculator</div>
+									<div class="projectImage">
+										<img src="./images/projects/calculator.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/calculator/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/calculator"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Animated banner</div>
+									<div class="projectImage">
+										<img src="./images/projects/animatedbanner.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a href="https://zasada94.github.io/Animated-Banner/"
+											>Live</a
+										>
+										<a href="https://github.com/Zasada94/Animated-Banner"
+											>Code</a
+										>
+									</div>
+								</div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Tip Calculator</div>
+									<div class="projectImage">
+										<img src="./images/projects/tipcalculator.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/TipCalculator/"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/TipCalculator"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
 
-                        <img src="./images/svg/techIcons/photoshop-svgrepo-com.svg" alt="">
-                        <img src="./images/svg/techIcons/webpack-svgrepo-com.svg" alt="">
-                    </div>
-            </section>
-            <section id="portfolio">
-                <div class="portfolioWrapper">
-                    <div class="topicHeader" data-aos="fade-left" data-aos-anchor-placement="top-bottom"
-                        data-aos-duration='1000'>
-                        <div class="topicWrapper">
-                            <h2>Portfolio</h2>
-                            <div class="topicIcon">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                        </div>
-                        <h3>
-                            <span>Commercial projects</span> worth checking out:
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Arkanoid Game
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                        <p>CANVAS </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>funny retro gameplay</li>
-                                        <li>counting entries and clicks- mobile and PC</li>
-                                        <li>collecting entered data e.g. emails, nicknames</li>
-                                        <li>score ranks</li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                </video>
-                            </div>
-                        </div>
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Catcher Game
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                        <p>CANVAS </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>catching and dodging falling objects with specified rules</li>
-                                        <li>advertising and marketing purpose</li>
-                                        <li>counting entries and clicks- mobile and PC</li>
-                                        <li>collecting entered data e.g. emails, nicknames</li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                    <source src="./video/pandora.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Worldcup Shooter Game
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                        <p>CANVAS </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>shooting goals with score counting and win / lose scenario </li>
-                                        <li>advertising and marketing purpose</li>
-                                        <li>counting entries and clicks- mobile and PC</li>
-                                        <li>collecting entered data e.g. emails, nicknames</li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                    <source src="./video/worldcup.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Memory Game
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>classic memorising game</li>
-                                        <li>advertising and marketing purpose</li>
-                                        <li>counting entries and clicks- mobile and PC</li>
-                                        <li>collecting entered data e.g. emails, nicknames</li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                    <source src="./video/winiary.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Simple Forms App
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>advertising and marketing purpose</li>
-                                        <li>counting entries and clicks- mobile and computer</li>
-                                        <li>collecting entered data e.g. emails, nicknames as well as other specified
-                                            data
-                                        </li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                    <source src="./video/heinz.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                        <div class="projectContainer">
-                            <div class="projectTitleWrapper">
-                                <div class="projectTitle">
-                                    Catcher Game
-                                </div>
-                                <div class="projectInfo">
-                                    <p>Technologies:</p>
-                                    <div class="technologies">
-                                        <p>HTML </p>
-                                        <p>CSS </p>
-                                        <p>JS </p>
-                                        <p>PHP </p>
-                                    </div>
-                                    <div class="features">
-                                        <p>Features:</p>
-                                        <li>catching and dodging falling objects with specified rules and score ranks
-                                        </li>
-                                        <li>advertising and marketing purpose</li>
-                                        <li>counting entries and clicks- mobile and computer</li>
-                                        <li>collecting entered data e.g. emails, nicknames</li>
-                                        <li>keeping 16/9 proportions</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projectVideo">
-                                <video class="video" controls>
-                                    <source src="./video/actimel.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="topicHeader" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <h3>
-                        <span >Commercial websites:</span>
-                    </h3>
-                    <div class="line"></div>
-                </div>
-                    <div class="nonCommercial">
-                        <div class="portfolio nonCommercial">
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Build IT gallery
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/buildit.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>next.js</p>
-                                    <p>swiper.js</p>
-                                    <p>lightbox.js</p>
-                                    <p>photo album</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://buildit-warszawa.pl/realizacje" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/buildIT" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="topicHeader" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                        data-aos-duration='1000'>
-                        <h3>
-                            <span >Solved recruitment tasks:</span>
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="nonCommercial">
-                        <div class="portfolio nonCommercial">
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Blog Search
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/blogsearch.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>React</p>
-                                    <p>Styled components</p>
-                                    <p>Node.js</p>
-                                    <p>Express</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/blogsearch/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/blogsearch" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Cars Dealer
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/carsdealer.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>React</p>
-                                    <p>SCSS</p>
-                                    <p>API</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/available-cars/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/available-cars" class="projectLink">Code</a>
-                                </div>
-                            </div>
+								<div class="projectWrapper">
+									<div class="projectTitle">Old Portfolio</div>
 
-                        </div>
-                    </div>
-                   
-                    <div class="topicHeader" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                        data-aos-duration='1000'>
-                        <h3>
-                            <span >Non-commercial projects:</span>
-                        </h3>
-                        <div class="line"></div>
-                    </div>
+									<div class="projectImage">
+										<img src="./images/projects/oldportfolio.PNG" alt="" />
+									</div>
+									<div class="imageHover">
+										<p>HTML</p>
+										<p>CSS</p>
+										<p>JS</p>
+									</div>
+									<div class="projectLinks">
+										<a
+											href="https://zasada94.github.io/PaulsPortfolio"
+											class="projectLink"
+											>Live</a
+										>
+										<a
+											href="https://github.com/Zasada94/PaulsPortfolio"
+											class="projectLink"
+											>Code</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="referencies">
+					<div
+						class="referenciesWrapper"
+						data-aos="fade-right"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<div class="topicHeader">
+							<div class="topicWrapper">
+								<h2>Referencies</h2>
+								<div class="topicIcon">
+									<i class="fa-solid fa-people-group"></i>
+								</div>
+							</div>
+							<h3>Look into <span>recommendations:</span></h3>
+							<div class="line"></div>
+						</div>
+						<div class="referencies">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./images/refs/ref1.PNG" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="./images/refs/ref2.PNG" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="./images/refs/ref3.PNG" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="./images/refs/ref4.png" alt="" />
+									</div>
+								</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contact">
+					<div
+						class="contactWrapper"
+						data-aos="fade-left"
+						data-aos-anchor-placement="top-bottom"
+						data-aos-duration="1000"
+					>
+						<div class="topicHeader">
+							<div class="topicWrapper">
+								<h2>Contact</h2>
+								<div class="topicIcon">
+									<i class="fa-solid fa-id-card"></i>
+								</div>
+							</div>
+							<h3>Interested? <span>Contact me!</span> below:</h3>
+							<div class="line"></div>
+						</div>
+						<div class="contact">
+							<ul>
+								<li>
+									<a href="https://github.com/Zasada94"
+										><i class="fa-brands fa-github"></i> Github</a
+									>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/pawel-zasada/"
+										><i class="fa-brands fa-linkedin"></i> Linked In</a
+									>
+								</li>
 
-                    <div class="nonCommercial">
-                        <div class="portfolio nonCommercial">
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Double Pizza
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/pizza.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>React</p>
-                                    <p>Styled components</p>
-                                    <p>MUI</p>
-                                    <p>Redux</p>
-                                    <p>Node.js API</p>
-                                    <p>Mongoose</p>
-                                    <p>Express</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://double-pizza.netlify.app/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/pizza-portal" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Hero Fighting Game
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/herofightgame.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                    <p>API</p>
-                                    <p>2 players</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/herofightgame/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/herofightgame" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Buduj z Zasadami
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/budujzzasadami.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                    <p>React</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/buduj-z-zasadami/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/buduj-z-zasadami" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Surf & Ski & Sail
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/surfskisail.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/surfskisail/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/surfskisail" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Pisses Me Off
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/pissesmeoff.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                    <p>React</p>
-                                    <p>MUI</p>
-                                    <p>Redux</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/pissesmeoff" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/pissesmeoff" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Rock, Paper and Scissors
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/rockpaperscissors.png" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/rockpaperscizors/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/rockpaperscizors" class="projectLink">Code</a>
-
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    To Do List
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/todolist.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/todolist/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/todolist" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Calculator
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/calculator.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/calculator/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/calculator" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Animated banner
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/animatedbanner.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/Animated-Banner/">Live</a>
-                                    <a href="https://github.com/Zasada94/Animated-Banner">Code</a>
-                                </div>
-                            </div>
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Tip Calculator
-                                </div>
-                                <div class="projectImage">
-                                    <img src="./images/projects/tipcalculator.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/TipCalculator/" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/TipCalculator" class="projectLink">Code</a>
-                                </div>
-                            </div>
-
-                            <div class="projectWrapper">
-                                <div class="projectTitle">
-                                    Old Portfolio
-                                </div>
-
-                                <div class="projectImage">
-                                    <img src="./images/projects/oldportfolio.PNG" alt="">
-                                </div>
-                                <div class="imageHover">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="projectLinks">
-                                    <a href="https://zasada94.github.io/PaulsPortfolio" class="projectLink">Live</a>
-                                    <a href="https://github.com/Zasada94/PaulsPortfolio" class="projectLink">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="referencies">
-                <div class="referenciesWrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <div class="topicHeader">
-                        <div class="topicWrapper">
-                            <h2>Referencies</h2>
-                            <div class="topicIcon">
-                                <i class="fa-solid fa-people-group"></i>
-                            </div>
-                        </div>
-                        <h3>
-                            Look into <span>recommendations:</span>
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="referencies">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./images/refs/ref1.PNG" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/refs/ref2.PNG" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/refs/ref3.PNG" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/refs/ref4.png" alt=""></div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <div class="contactWrapper" data-aos="fade-left" data-aos-anchor-placement="top-bottom"
-                    data-aos-duration='1000'>
-                    <div class="topicHeader">
-                        <div class="topicWrapper">
-                            <h2>Contact</h2>
-                            <div class="topicIcon">
-                                <i class="fa-solid fa-id-card"></i>
-                            </div>
-                        </div>
-                        <h3>
-                            Interested? <span>Contact me!</span> below:
-                        </h3>
-                        <div class="line"></div>
-                    </div>
-                    <div class="contact">
-                        <ul>
-                            <li><a href="https://github.com/Zasada94"><i class="fa-brands fa-github"></i> Github</a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/pawel-zasada/"><i class="fa-brands fa-linkedin"></i>
-                                Linked In</a>
-                            <li><a href="mailto:pawelzasada2@wp.pl"><i class="fa-solid fa-envelope"></i> E-mail</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <footer id="footer">
-                <div class="footerWrapper">
-                    <p>Paweł Zasada </p> <i class="fa-solid fa-copyright"></i>
-                    <p id="footerDate"></p>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="./js/preloader.js"></script>
-    <script src="./js/animatedBurger.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-</body>
-
+								<li>
+									<a href="mailto:pawelzasada2@wp.pl"
+										><i class="fa-solid fa-envelope"></i> E-mail</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<footer id="footer">
+					<div class="footerWrapper">
+						<p>Paweł Zasada</p>
+						<i class="fa-solid fa-copyright"></i>
+						<p id="footerDate"></p>
+					</div>
+				</footer>
+			</main>
+		</div>
+		<script src="./js/preloader.js"></script>
+		<script src="./js/animatedBurger.js"></script>
+		<script src="./js/swiper.js"></script>
+		<script src="./js/footer.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	</body>
 </html>
